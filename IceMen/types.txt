@@ -1,0 +1,12 @@
+types:
+snowman = 1
+bullet = 2
+heavybullet = 3
+snowball = 4
+
+flamethrower = 11
+pup yellow = 15
+pup red = 16
+pup blue = 17
+
+hurdles = 30

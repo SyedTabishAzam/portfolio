@@ -1,0 +1,79 @@
+#include "FlameThrower.h"
+#include "sstream"
+
+FlameThrower::FlameThrower(BITMAP* image,float x,float y,float width,float height)
+{
+    this->image = image;
+    frame_height=height;
+    frame_width=width;
+    this->x = x;
+    setAlive(true);
+    this->y = y;
+    type=11;
+}
+
+FlameThrower::~FlameThrower()
+{
+    cout<<"Flame thrower Destroyed"<<endl;
+}
+
+void FlameThrower::Draw(BITMAP* buffer)
+{
+    masked_blit(image, buffer, 8, 10, x,y, frame_width,frame_height);
+}
+
+void FlameThrower::ChangeState()
+{
+    if(GetHealth()==10000)
+    {
+        iceball = NORMAL;
+    }
+    if(GetHealth()<10000)
+    {
+        iceball = HOT;
+    }
+    if(GetHealth()<8000)
+    {
+        iceball=MELT;
+    }
+    if(GetHealth()<6000)
+    {
+        iceball=WARM;
+    }
+    if(GetHealth()<4000)
+    {
+        iceball=COLD;
+    }
+    if(GetHealth()<2000)
+    {
+        iceball=BALL;
+        (health<0)?(health=0) : (health = health);
+    }
+}
+
+void FlameThrower::Save(ofstream& f1)
+{
+
+
+
+    f1<<typeid(this).name()<<"."<<this->x<<endl;
+    f1<<typeid(this).name()<<"."<<this->y<<endl;
+    f1<<typeid(this).name()<<"."<<this->health<<endl;
+    f1<<typeid(this).name()<<"."<<this->type<<endl;
+    f1<<"&"<<endl;
+
+}
+
+void FlameThrower::Load(ifstream& f1)
+{
+
+    string line,value;
+    ostringstream parser;
+    getline(f1,line);
+    while(line!="&")
+    {
+        value = line.substr(line.find("."));
+        parser<<value;
+    }
+
+}

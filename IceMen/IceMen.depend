@@ -1,0 +1,1376 @@
+# depslib dependency file v1.0
+1456387704 source:d:\work\codeblocksprojects\striker\armour.cpp
+	"Armour.h"
+
+1456387704 d:\work\codeblocksprojects\striker\armour.h
+	"allegro.h"
+	"Point.h"
+	<iostream>
+
+1306094226 d:\work\allegro\include\allegro.h
+	"allegro/base.h"
+	"allegro/system.h"
+	"allegro/debug.h"
+	"allegro/unicode.h"
+	"allegro/mouse.h"
+	"allegro/timer.h"
+	"allegro/keyboard.h"
+	"allegro/joystick.h"
+	"allegro/palette.h"
+	"allegro/gfx.h"
+	"allegro/color.h"
+	"allegro/draw.h"
+	"allegro/rle.h"
+	"allegro/compiled.h"
+	"allegro/text.h"
+	"allegro/font.h"
+	"allegro/fli.h"
+	"allegro/config.h"
+	"allegro/gui.h"
+	"allegro/sound.h"
+	"allegro/file.h"
+	"allegro/lzss.h"
+	"allegro/datafile.h"
+	"allegro/fixed.h"
+	"allegro/fmaths.h"
+	"allegro/matrix.h"
+	"allegro/quat.h"
+	"allegro/3d.h"
+	"allegro/3dmaths.h"
+	"allegro/alcompat.h"
+	"allegro/fix.h"
+
+1306094226 d:\work\allegro\include\allegro\base.h
+	<errno.h>
+	<limits.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<fortify/fortify.h>
+	<dmalloc.h>
+	"internal/alconfig.h"
+
+1306725900 d:\work\allegro\include\allegro\internal\alconfig.h
+	"allegro/platform/alplatf.h"
+	"allegro/platform/aldjgpp.h"
+	"allegro/platform/alwatcom.h"
+	"allegro/platform/almngw32.h"
+	"allegro/platform/aldmc.h"
+	"allegro/platform/albcc32.h"
+	"allegro/platform/almsvc.h"
+	"allegro/platform/albecfg.h"
+	"allegro/platform/albecfg.h"
+	"allegro/platform/almaccfg.h"
+	"allegro/platform/alosxcfg.h"
+	"allegro/platform/alqnxcfg.h"
+	"allegro/platform/alucfg.h"
+	"allegro/platform/alpspcfg.h"
+	"allegro/platform/astdint.h"
+
+1306098034 d:\work\allegro\include\allegro\platform\alplatf.h
+
+1306094226 d:\work\allegro\include\allegro\platform\aldjgpp.h
+	<pc.h>
+	<dir.h>
+	<dpmi.h>
+	<go32.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/farptr.h>
+
+1306094226 d:\work\allegro\include\allegro\platform\alwatcom.h
+	<io.h>
+	<i86.h>
+	<conio.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1306725894 d:\work\allegro\include\allegro\platform\almngw32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1306094226 d:\work\allegro\include\allegro\platform\aldmc.h
+	<io.h>
+	<fcntl.h>
+	<stdint.h>
+
+1306094226 d:\work\allegro\include\allegro\platform\albcc32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1306094226 d:\work\allegro\include\allegro\platform\almsvc.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1306094226 d:\work\allegro\include\allegro\platform\albecfg.h
+	<fcntl.h>
+	<unistd.h>
+
+1306094226 d:\work\allegro\include\allegro\platform\almaccfg.h
+	<MacTypes.h>
+	<QuickDraw.h>
+	<FCntl.h>
+
+1306094226 d:\work\allegro\include\allegro\platform\alosxcfg.h
+
+1306094226 d:\work\allegro\include\allegro\platform\alqnxcfg.h
+	<stdio.h>
+	<stdlib.h>
+	<fcntl.h>
+	<unistd.h>
+
+1306094224 d:\work\allegro\include\allegro\platform\alucfg.h
+	<fcntl.h>
+	<unistd.h>
+	"allegro/platform/alunixac.h"
+
+1306094224 d:\work\allegro\include\allegro\platform\alpspcfg.h
+	<fcntl.h>
+	<unistd.h>
+
+1306094226 d:\work\allegro\include\allegro\platform\astdint.h
+	<inttypes.h>
+	<stdint.h>
+
+1306094226 d:\work\allegro\include\allegro\system.h
+	"base.h"
+	"unicode.h"
+	"config.h"
+	"inline/system.inl"
+
+1306094226 d:\work\allegro\include\allegro\unicode.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\config.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\inline\system.inl
+	"allegro/debug.h"
+
+1306094226 d:\work\allegro\include\allegro\debug.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\mouse.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\timer.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\keyboard.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\joystick.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\palette.h
+
+1306094226 d:\work\allegro\include\allegro\gfx.h
+	"3d.h"
+	"base.h"
+	"fixed.h"
+	"inline/gfx.inl"
+
+1306094226 d:\work\allegro\include\allegro\3d.h
+	"base.h"
+	"fixed.h"
+
+1306094226 d:\work\allegro\include\allegro\fixed.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\inline\gfx.inl
+	"allegro/debug.h"
+	"asm.inl"
+
+1306094226 d:\work\allegro\include\allegro\inline\asm.inl
+	"allegro/platform/al386gcc.h"
+	"allegro/platform/al386vc.h"
+	"allegro/platform/al386wat.h"
+
+1306094226 d:\work\allegro\include\allegro\platform\al386gcc.h
+
+1306094226 d:\work\allegro\include\allegro\platform\al386vc.h
+
+1306094226 d:\work\allegro\include\allegro\platform\al386wat.h
+
+1306094226 d:\work\allegro\include\allegro\color.h
+	"base.h"
+	"palette.h"
+	"inline/color.inl"
+
+1306094226 d:\work\allegro\include\allegro\inline\color.inl
+
+1306094226 d:\work\allegro\include\allegro\draw.h
+	"base.h"
+	"fixed.h"
+	"gfx.h"
+	"inline/draw.inl"
+
+1306094226 d:\work\allegro\include\allegro\inline\draw.inl
+	"allegro/debug.h"
+	"allegro/3d.h"
+	"gfx.inl"
+
+1306094226 d:\work\allegro\include\allegro\rle.h
+	"base.h"
+	"gfx.h"
+	"inline/rle.inl"
+
+1306094226 d:\work\allegro\include\allegro\inline\rle.inl
+	"allegro/debug.h"
+
+1306094226 d:\work\allegro\include\allegro\compiled.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\text.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\font.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\fli.h
+	"base.h"
+	"palette.h"
+
+1306094226 d:\work\allegro\include\allegro\gui.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\sound.h
+	"base.h"
+	"digi.h"
+	"stream.h"
+	"midi.h"
+
+1306094226 d:\work\allegro\include\allegro\digi.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\stream.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\midi.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\file.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\lzss.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\datafile.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\fmaths.h
+	"base.h"
+	"fixed.h"
+	"inline/fmaths.inl"
+
+1306094226 d:\work\allegro\include\allegro\inline\fmaths.inl
+	"asm.inl"
+
+1306094226 d:\work\allegro\include\allegro\matrix.h
+	"base.h"
+	"fixed.h"
+	"fmaths.h"
+	"inline/matrix.inl"
+
+1306094226 d:\work\allegro\include\allegro\inline\matrix.inl
+
+1306094226 d:\work\allegro\include\allegro\quat.h
+	"base.h"
+
+1306094226 d:\work\allegro\include\allegro\3dmaths.h
+	"base.h"
+	"fixed.h"
+	"inline/3dmaths.inl"
+
+1306094226 d:\work\allegro\include\allegro\inline\3dmaths.inl
+
+1306094226 d:\work\allegro\include\allegro\alcompat.h
+
+1306094226 d:\work\allegro\include\allegro\fix.h
+	"fixed.h"
+	"fmaths.h"
+	"inline/fix.inl"
+
+1306094226 d:\work\allegro\include\allegro\inline\fix.inl
+
+1455957198 d:\work\codeblocksprojects\striker\point.h
+
+1456680236 source:d:\work\codeblocksprojects\striker\bullet.cpp
+	"Bullet.h"
+	<iostream>
+
+1456585154 d:\work\codeblocksprojects\striker\bullet.h
+	"Plane.h"
+
+1456984788 d:\work\codeblocksprojects\striker\plane.h
+	"allegro.h"
+	"Object.h"
+	"Point.h"
+	"BoundingBox.h"
+	"LightArmour.h"
+	"HeavyArmour.h"
+
+1456670593 d:\work\codeblocksprojects\striker\object.h
+	"Point.h"
+	"BoundingBox.h"
+	"allegro.h"
+	<iostream>
+
+1457009001 d:\work\codeblocksprojects\striker\boundingbox.h
+	"allegro.h"
+
+1456387704 d:\work\codeblocksprojects\striker\lightarmour.h
+	"Armour.h"
+
+1456387704 d:\work\codeblocksprojects\striker\heavyarmour.h
+	"Armour.h"
+
+1456938090 source:d:\work\codeblocksprojects\striker\explosion.cpp
+	"Explosion.h"
+
+1456680144 d:\work\codeblocksprojects\striker\explosion.h
+	"allegro.h"
+	"Point.h"
+	"Plane.h"
+
+1456388908 source:d:\work\codeblocksprojects\striker\heavyarmour.cpp
+	"HeavyArmour.h"
+
+1456388952 source:d:\work\codeblocksprojects\striker\lightarmour.cpp
+	"LightArmour.h"
+
+1457008632 source:d:\work\codeblocksprojects\striker\linkedlist.cpp
+	<iostream>
+	"LinkedList.h"
+	"Explosion.h"
+
+1457009984 d:\work\codeblocksprojects\striker\linkedlist.h
+	<iostream>
+	"allegro.h"
+	"Object.h"
+
+1457009494 source:d:\work\codeblocksprojects\striker\main.cpp
+	<allegro.h>
+	"Point.h"
+	"Player.h"
+	"Viper.h"
+	"Cobra.h"
+	"Bullet.h"
+	"Terrain.h"
+	"LinkedList.h"
+	<iostream>
+
+1456585690 d:\work\codeblocksprojects\striker\player.h
+	"Plane.h"
+	"Armour.h"
+
+1456984788 d:\work\codeblocksprojects\striker\viper.h
+	"Plane.h"
+
+1457004534 d:\work\codeblocksprojects\striker\terrain.h
+	"allegro.h"
+	"Point.h"
+	"Tile.h"
+
+1457004970 d:\work\codeblocksprojects\striker\tile.h
+	"allegro.h"
+	"Point.h"
+	"Object.h"
+
+1456670635 source:d:\work\codeblocksprojects\striker\plane.cpp
+	"Plane.h"
+
+1456938090 source:d:\work\codeblocksprojects\striker\player.cpp
+	"Player.h"
+	"Bullet.h"
+
+1457006907 source:d:\work\codeblocksprojects\striker\terrain.cpp
+	"Terrain.h"
+	"math.h"
+
+1457004534 source:d:\work\codeblocksprojects\striker\tile.cpp
+	"Tile.h"
+
+1457009376 source:d:\work\codeblocksprojects\striker\viper.cpp
+	"Viper.h"
+	<iostream>
+
+1457009291 source:d:\work\codeblocksprojects\striker\cobra.cpp
+	"Cobra.h"
+	<iostream>
+
+1456984788 d:\work\codeblocksprojects\striker\cobra.h
+	"Plane.h"
+
+1461136954 source:c:\users\ta00263\desktop\striker\main.cpp
+	<allegro.h>
+	<iostream>
+	"SnowMan.h"
+	"LinkedList.cpp"
+
+1453280032 c:\allegro\include\allegro.h
+	"allegro/base.h"
+	"allegro/system.h"
+	"allegro/debug.h"
+	"allegro/unicode.h"
+	"allegro/mouse.h"
+	"allegro/timer.h"
+	"allegro/keyboard.h"
+	"allegro/joystick.h"
+	"allegro/palette.h"
+	"allegro/gfx.h"
+	"allegro/color.h"
+	"allegro/draw.h"
+	"allegro/rle.h"
+	"allegro/compiled.h"
+	"allegro/text.h"
+	"allegro/font.h"
+	"allegro/fli.h"
+	"allegro/config.h"
+	"allegro/gui.h"
+	"allegro/sound.h"
+	"allegro/file.h"
+	"allegro/lzss.h"
+	"allegro/datafile.h"
+	"allegro/fixed.h"
+	"allegro/fmaths.h"
+	"allegro/matrix.h"
+	"allegro/quat.h"
+	"allegro/3d.h"
+	"allegro/3dmaths.h"
+	"allegro/alcompat.h"
+	"allegro/fix.h"
+
+1453280036 c:\allegro\include\allegro\base.h
+	<errno.h>
+	<limits.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<fortify/fortify.h>
+	<dmalloc.h>
+	"internal/alconfig.h"
+
+1453280037 c:\allegro\include\allegro\internal\alconfig.h
+	"allegro/platform/alplatf.h"
+	"allegro/platform/aldjgpp.h"
+	"allegro/platform/alwatcom.h"
+	"allegro/platform/almngw32.h"
+	"allegro/platform/aldmc.h"
+	"allegro/platform/albcc32.h"
+	"allegro/platform/almsvc.h"
+	"allegro/platform/albecfg.h"
+	"allegro/platform/albecfg.h"
+	"allegro/platform/almaccfg.h"
+	"allegro/platform/alosxcfg.h"
+	"allegro/platform/alqnxcfg.h"
+	"allegro/platform/alucfg.h"
+	"allegro/platform/alpspcfg.h"
+	"allegro/platform/astdint.h"
+
+1453280043 c:\allegro\include\allegro\platform\alplatf.h
+
+1453280041 c:\allegro\include\allegro\platform\aldjgpp.h
+	<pc.h>
+	<dir.h>
+	<dpmi.h>
+	<go32.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/farptr.h>
+
+1453280043 c:\allegro\include\allegro\platform\alwatcom.h
+	<io.h>
+	<i86.h>
+	<conio.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1453280040 c:\allegro\include\allegro\platform\almngw32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1453280040 c:\allegro\include\allegro\platform\aldmc.h
+	<io.h>
+	<fcntl.h>
+	<stdint.h>
+
+1453280040 c:\allegro\include\allegro\platform\albcc32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1453280042 c:\allegro\include\allegro\platform\almsvc.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1453280039 c:\allegro\include\allegro\platform\albecfg.h
+	<fcntl.h>
+	<unistd.h>
+
+1453280042 c:\allegro\include\allegro\platform\almaccfg.h
+	<MacTypes.h>
+	<QuickDraw.h>
+	<FCntl.h>
+
+1453280043 c:\allegro\include\allegro\platform\alosxcfg.h
+
+1453280043 c:\allegro\include\allegro\platform\alqnxcfg.h
+	<stdio.h>
+	<stdlib.h>
+	<fcntl.h>
+	<unistd.h>
+
+1453280043 c:\allegro\include\allegro\platform\alucfg.h
+	<fcntl.h>
+	<unistd.h>
+	"allegro/platform/alunixac.h"
+
+1453280042 c:\allegro\include\allegro\platform\alpspcfg.h
+	<fcntl.h>
+	<unistd.h>
+
+1453280042 c:\allegro\include\allegro\platform\astdint.h
+	<inttypes.h>
+	<stdint.h>
+
+1453280035 c:\allegro\include\allegro\system.h
+	"base.h"
+	"unicode.h"
+	"config.h"
+	"inline/system.inl"
+
+1453280036 c:\allegro\include\allegro\unicode.h
+	"base.h"
+
+1453280036 c:\allegro\include\allegro\config.h
+	"base.h"
+
+1453280037 c:\allegro\include\allegro\inline\system.inl
+	"allegro/debug.h"
+
+1453280037 c:\allegro\include\allegro\debug.h
+	"base.h"
+
+1453280036 c:\allegro\include\allegro\mouse.h
+	"base.h"
+
+1453280037 c:\allegro\include\allegro\timer.h
+	"base.h"
+
+1453280035 c:\allegro\include\allegro\keyboard.h
+	"base.h"
+
+1453280036 c:\allegro\include\allegro\joystick.h
+	"base.h"
+
+1453280036 c:\allegro\include\allegro\palette.h
+
+1453280036 c:\allegro\include\allegro\gfx.h
+	"3d.h"
+	"base.h"
+	"fixed.h"
+	"inline/gfx.inl"
+
+1453280035 c:\allegro\include\allegro\3d.h
+	"base.h"
+	"fixed.h"
+
+1453280034 c:\allegro\include\allegro\fixed.h
+	"base.h"
+
+1453280037 c:\allegro\include\allegro\inline\gfx.inl
+	"allegro/debug.h"
+	"asm.inl"
+
+1453280037 c:\allegro\include\allegro\inline\asm.inl
+	"allegro/platform/al386gcc.h"
+	"allegro/platform/al386vc.h"
+	"allegro/platform/al386wat.h"
+
+1453280041 c:\allegro\include\allegro\platform\al386gcc.h
+
+1453280043 c:\allegro\include\allegro\platform\al386vc.h
+
+1453280042 c:\allegro\include\allegro\platform\al386wat.h
+
+1453280036 c:\allegro\include\allegro\color.h
+	"base.h"
+	"palette.h"
+	"inline/color.inl"
+
+1453280037 c:\allegro\include\allegro\inline\color.inl
+
+1453280036 c:\allegro\include\allegro\draw.h
+	"base.h"
+	"fixed.h"
+	"gfx.h"
+	"inline/draw.inl"
+
+1453280037 c:\allegro\include\allegro\inline\draw.inl
+	"allegro/debug.h"
+	"allegro/3d.h"
+	"gfx.inl"
+
+1453280034 c:\allegro\include\allegro\rle.h
+	"base.h"
+	"gfx.h"
+	"inline/rle.inl"
+
+1453280037 c:\allegro\include\allegro\inline\rle.inl
+	"allegro/debug.h"
+
+1453280034 c:\allegro\include\allegro\compiled.h
+	"base.h"
+
+1453280035 c:\allegro\include\allegro\text.h
+	"base.h"
+
+1453280034 c:\allegro\include\allegro\font.h
+	"base.h"
+
+1453280036 c:\allegro\include\allegro\fli.h
+	"base.h"
+	"palette.h"
+
+1453280035 c:\allegro\include\allegro\gui.h
+	"base.h"
+
+1453280035 c:\allegro\include\allegro\sound.h
+	"base.h"
+	"digi.h"
+	"stream.h"
+	"midi.h"
+
+1453280036 c:\allegro\include\allegro\digi.h
+	"base.h"
+
+1453280035 c:\allegro\include\allegro\stream.h
+	"base.h"
+
+1453280037 c:\allegro\include\allegro\midi.h
+	"base.h"
+
+1453280036 c:\allegro\include\allegro\file.h
+	"base.h"
+
+1453280036 c:\allegro\include\allegro\lzss.h
+	"base.h"
+
+1453280036 c:\allegro\include\allegro\datafile.h
+	"base.h"
+
+1453280034 c:\allegro\include\allegro\fmaths.h
+	"base.h"
+	"fixed.h"
+	"inline/fmaths.inl"
+
+1453280037 c:\allegro\include\allegro\inline\fmaths.inl
+	"asm.inl"
+
+1453280034 c:\allegro\include\allegro\matrix.h
+	"base.h"
+	"fixed.h"
+	"fmaths.h"
+	"inline/matrix.inl"
+
+1453280037 c:\allegro\include\allegro\inline\matrix.inl
+
+1453280036 c:\allegro\include\allegro\quat.h
+	"base.h"
+
+1453280035 c:\allegro\include\allegro\3dmaths.h
+	"base.h"
+	"fixed.h"
+	"inline/3dmaths.inl"
+
+1453280037 c:\allegro\include\allegro\inline\3dmaths.inl
+
+1453280036 c:\allegro\include\allegro\alcompat.h
+
+1453280036 c:\allegro\include\allegro\fix.h
+	"fixed.h"
+	"fmaths.h"
+	"inline/fix.inl"
+
+1453280037 c:\allegro\include\allegro\inline\fix.inl
+
+1461136653 source:c:\users\ta00263\desktop\striker\snowman.cpp
+	"SnowMan.h"
+
+1461136954 c:\users\ta00263\desktop\striker\snowman.h
+	<iostream>
+	"allegro.h"
+	"Object.h"
+
+1461130040 c:\users\ta00263\desktop\striker\linkedlist.h
+	"SnowMan.h"
+
+1461136934 c:\users\ta00263\desktop\striker\object.h
+	<iostream>
+	"allegro.h"
+
+1461130031 source:c:\users\ta00263\desktop\striker\linkedlist.cpp
+	"LinkedList.h"
+
+1461130031 c:\users\ta00263\desktop\striker\linkedlist.cpp
+	"LinkedList.h"
+
+1463174138 source:c:\users\tabish\db\dropbox\project\striker\linkedlist.cpp
+	"LinkedList.h"
+
+1463170824 c:\users\tabish\db\dropbox\project\striker\linkedlist.h
+	"SnowMan.h"
+	"Enemy.h"
+	"FlameThrower.h"
+	"Hurdles.h"
+	<fstream>
+
+1464285816 c:\users\tabish\db\dropbox\project\striker\snowman.h
+	<iostream>
+	"allegro.h"
+	"Object.h"
+	"Bullet.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro.h
+	"allegro/base.h"
+	"allegro/system.h"
+	"allegro/debug.h"
+	"allegro/unicode.h"
+	"allegro/mouse.h"
+	"allegro/timer.h"
+	"allegro/keyboard.h"
+	"allegro/joystick.h"
+	"allegro/palette.h"
+	"allegro/gfx.h"
+	"allegro/color.h"
+	"allegro/draw.h"
+	"allegro/rle.h"
+	"allegro/compiled.h"
+	"allegro/text.h"
+	"allegro/font.h"
+	"allegro/fli.h"
+	"allegro/config.h"
+	"allegro/gui.h"
+	"allegro/sound.h"
+	"allegro/file.h"
+	"allegro/lzss.h"
+	"allegro/datafile.h"
+	"allegro/fixed.h"
+	"allegro/fmaths.h"
+	"allegro/matrix.h"
+	"allegro/quat.h"
+	"allegro/3d.h"
+	"allegro/3dmaths.h"
+	"allegro/alcompat.h"
+	"allegro/fix.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\base.h
+	<errno.h>
+	<limits.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<fortify/fortify.h>
+	<dmalloc.h>
+	"internal/alconfig.h"
+
+1306725900 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\internal\alconfig.h
+	"allegro/platform/alplatf.h"
+	"allegro/platform/aldjgpp.h"
+	"allegro/platform/alwatcom.h"
+	"allegro/platform/almngw32.h"
+	"allegro/platform/aldmc.h"
+	"allegro/platform/albcc32.h"
+	"allegro/platform/almsvc.h"
+	"allegro/platform/albecfg.h"
+	"allegro/platform/albecfg.h"
+	"allegro/platform/almaccfg.h"
+	"allegro/platform/alosxcfg.h"
+	"allegro/platform/alqnxcfg.h"
+	"allegro/platform/alucfg.h"
+	"allegro/platform/alpspcfg.h"
+	"allegro/platform/astdint.h"
+
+1306098034 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\alplatf.h
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\aldjgpp.h
+	<pc.h>
+	<dir.h>
+	<dpmi.h>
+	<go32.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/farptr.h>
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\alwatcom.h
+	<io.h>
+	<i86.h>
+	<conio.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1306725894 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\almngw32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\aldmc.h
+	<io.h>
+	<fcntl.h>
+	<stdint.h>
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\albcc32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\almsvc.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\albecfg.h
+	<fcntl.h>
+	<unistd.h>
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\almaccfg.h
+	<MacTypes.h>
+	<QuickDraw.h>
+	<FCntl.h>
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\alosxcfg.h
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\alqnxcfg.h
+	<stdio.h>
+	<stdlib.h>
+	<fcntl.h>
+	<unistd.h>
+
+1306094224 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\alucfg.h
+	<fcntl.h>
+	<unistd.h>
+	"allegro/platform/alunixac.h"
+
+1306094224 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\alpspcfg.h
+	<fcntl.h>
+	<unistd.h>
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\astdint.h
+	<inttypes.h>
+	<stdint.h>
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\system.h
+	"base.h"
+	"unicode.h"
+	"config.h"
+	"inline/system.inl"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\unicode.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\config.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\inline\system.inl
+	"allegro/debug.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\debug.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\mouse.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\timer.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\keyboard.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\joystick.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\palette.h
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\gfx.h
+	"3d.h"
+	"base.h"
+	"fixed.h"
+	"inline/gfx.inl"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\3d.h
+	"base.h"
+	"fixed.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\fixed.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\inline\gfx.inl
+	"allegro/debug.h"
+	"asm.inl"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\inline\asm.inl
+	"allegro/platform/al386gcc.h"
+	"allegro/platform/al386vc.h"
+	"allegro/platform/al386wat.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\al386gcc.h
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\al386vc.h
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\platform\al386wat.h
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\color.h
+	"base.h"
+	"palette.h"
+	"inline/color.inl"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\inline\color.inl
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\draw.h
+	"base.h"
+	"fixed.h"
+	"gfx.h"
+	"inline/draw.inl"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\inline\draw.inl
+	"allegro/debug.h"
+	"allegro/3d.h"
+	"gfx.inl"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\rle.h
+	"base.h"
+	"gfx.h"
+	"inline/rle.inl"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\inline\rle.inl
+	"allegro/debug.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\compiled.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\text.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\font.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\fli.h
+	"base.h"
+	"palette.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\gui.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\sound.h
+	"base.h"
+	"digi.h"
+	"stream.h"
+	"midi.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\digi.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\stream.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\midi.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\file.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\lzss.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\datafile.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\fmaths.h
+	"base.h"
+	"fixed.h"
+	"inline/fmaths.inl"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\inline\fmaths.inl
+	"asm.inl"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\matrix.h
+	"base.h"
+	"fixed.h"
+	"fmaths.h"
+	"inline/matrix.inl"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\inline\matrix.inl
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\quat.h
+	"base.h"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\3dmaths.h
+	"base.h"
+	"fixed.h"
+	"inline/3dmaths.inl"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\inline\3dmaths.inl
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\alcompat.h
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\fix.h
+	"fixed.h"
+	"fmaths.h"
+	"inline/fix.inl"
+
+1306094226 c:\allegro-4.4.2-mingw-4.5.2\include\allegro\inline\fix.inl
+
+1463170789 c:\users\tabish\db\dropbox\project\striker\object.h
+	<iostream>
+	"allegro.h"
+	"vector"
+	<typeinfo>
+	"sstream"
+	<fstream>
+
+1464351044 source:c:\users\tabish\db\dropbox\project\striker\main.cpp
+	<allegro.h>
+	<iostream>
+	"SnowMan.h"
+	"FlameThrower.h"
+	"LinkedList.cpp"
+	<cstdlib>
+	"time.h"
+	"Map.h"
+	"vector"
+	"BackgroundGame.h"
+	"Powerup.h"
+
+1463174138 c:\users\tabish\db\dropbox\project\striker\linkedlist.cpp
+	"LinkedList.h"
+
+1464287993 source:c:\users\tabish\db\dropbox\project\striker\snowman.cpp
+	"SnowMan.h"
+
+1464287754 source:c:\users\tabish\db\dropbox\project\striker\bullet.cpp
+	"Bullet.h"
+
+1463126863 c:\users\tabish\db\dropbox\project\striker\bullet.h
+	<iostream>
+	"Object.h"
+	"math.h"
+	"allegro.h"
+
+1461735589 source:c:\users\temp.huf\desktop\striker\striker\bullet.cpp
+	"Bullet.h"
+
+1461735584 c:\users\temp.huf\desktop\striker\striker\bullet.h
+	<iostream>
+	"Object.h"
+	"math.h"
+	"allegro.h"
+
+1461741453 c:\users\temp.huf\desktop\striker\striker\object.h
+	<iostream>
+	"allegro.h"
+
+1461741433 source:c:\users\temp.huf\desktop\striker\striker\linkedlist.cpp
+	"LinkedList.h"
+
+1461741440 c:\users\temp.huf\desktop\striker\striker\linkedlist.h
+	"SnowMan.h"
+
+1461735498 c:\users\temp.huf\desktop\striker\striker\snowman.h
+	<iostream>
+	"allegro.h"
+	"Object.h"
+	"Bullet.h"
+
+1461740711 source:c:\users\temp.huf\desktop\striker\striker\main.cpp
+	<allegro.h>
+	<iostream>
+	"SnowMan.h"
+	"FlameThrower.h"
+	"LinkedList.cpp"
+	<cstdlib>
+	"time.h"
+	"Powerup.h"
+
+1461741433 c:\users\temp.huf\desktop\striker\striker\linkedlist.cpp
+	"LinkedList.h"
+
+1461735489 source:c:\users\temp.huf\desktop\striker\striker\snowman.cpp
+	"SnowMan.h"
+
+1461736403 source:c:\users\temp.huf\desktop\striker\striker\enemy.cpp
+	"Enemy.h"
+
+1461735874 c:\users\temp.huf\desktop\striker\striker\enemy.h
+	"allegro.h"
+	"Object.h"
+	<iostream>
+
+1461739902 source:c:\users\temp.huf\desktop\striker\striker\flamethrower.cpp
+	"FlameThrower.h"
+
+1461734291 c:\users\temp.huf\desktop\striker\striker\flamethrower.h
+	"Enemy.h"
+	"allegro.h"
+	<iostream>
+
+1461740498 source:c:\users\temp.huf\desktop\striker\striker\powerup.cpp
+	"Powerup.h"
+
+1461740097 c:\users\temp.huf\desktop\striker\striker\powerup.h
+	"Object.h"
+
+1461931271 source:c:\users\temp.huf\desktop\striker\bullet.cpp
+	"Bullet.h"
+
+1461931271 c:\users\temp.huf\desktop\striker\bullet.h
+	<iostream>
+	"Object.h"
+	"math.h"
+	"allegro.h"
+
+1461931271 c:\users\temp.huf\desktop\striker\object.h
+	<iostream>
+	"allegro.h"
+
+1461931271 source:c:\users\temp.huf\desktop\striker\enemy.cpp
+	"Enemy.h"
+
+1461931271 c:\users\temp.huf\desktop\striker\enemy.h
+	"allegro.h"
+	"Object.h"
+	<iostream>
+
+1461931271 source:c:\users\temp.huf\desktop\striker\flamethrower.cpp
+	"FlameThrower.h"
+
+1461931271 c:\users\temp.huf\desktop\striker\flamethrower.h
+	"Enemy.h"
+	"allegro.h"
+	<iostream>
+
+1461931271 source:c:\users\temp.huf\desktop\striker\linkedlist.cpp
+	"LinkedList.h"
+
+1461931271 c:\users\temp.huf\desktop\striker\linkedlist.h
+	"SnowMan.h"
+
+1461931271 c:\users\temp.huf\desktop\striker\snowman.h
+	<iostream>
+	"allegro.h"
+	"Object.h"
+	"Bullet.h"
+
+1461932115 source:c:\users\temp.huf\desktop\striker\main.cpp
+	<allegro.h>
+	<iostream>
+	"SnowMan.h"
+	"FlameThrower.h"
+	"LinkedList.cpp"
+	<cstdlib>
+	"time.h"
+	"Map.h"
+	"Powerup.h"
+
+1461931271 c:\users\temp.huf\desktop\striker\linkedlist.cpp
+	"LinkedList.h"
+
+1461931271 c:\users\temp.huf\desktop\striker\powerup.h
+	"Object.h"
+
+1461931271 source:c:\users\temp.huf\desktop\striker\powerup.cpp
+	"Powerup.h"
+
+1461931271 source:c:\users\temp.huf\desktop\striker\snowman.cpp
+	"SnowMan.h"
+
+1461932064 source:c:\users\temp.huf\desktop\striker\map.cpp
+	"Map.h"
+
+1461931673 c:\users\temp.huf\desktop\striker\map.h
+	"Object.h"
+	"allegro.h"
+	"fstream"
+	"ostream"
+
+1463113786 source:c:\users\tabish\db\dropbox\project\striker\enemy.cpp
+	"Enemy.h"
+
+1463165225 c:\users\tabish\db\dropbox\project\striker\enemy.h
+	"allegro.h"
+	"Object.h"
+	"Powerup.h"
+	<iostream>
+	<fstream>
+
+1464288831 source:c:\users\tabish\db\dropbox\project\striker\flamethrower.cpp
+	"FlameThrower.h"
+	"sstream"
+
+1463165272 c:\users\tabish\db\dropbox\project\striker\flamethrower.h
+	"Enemy.h"
+	"allegro.h"
+	<iostream>
+	<fstream>
+
+1463164257 c:\users\tabish\db\dropbox\project\striker\map.h
+	"Object.h"
+	"allegro.h"
+	"fstream"
+	"sstream"
+	"Hurdles.h"
+	"FlameThrower.h"
+	"vector"
+
+1463127077 c:\users\tabish\db\dropbox\project\striker\powerup.h
+	"Object.h"
+
+1464289068 source:c:\users\tabish\db\dropbox\project\striker\map.cpp
+	"Map.h"
+
+1464288184 source:c:\users\tabish\db\dropbox\project\striker\powerup.cpp
+	"Powerup.h"
+
+1463170438 c:\users\tabish\db\dropbox\project\striker\hurdles.h
+	"allegro.h"
+	"Object.h"
+	"vector"
+
+1463175361 source:c:\users\tabish\db\dropbox\project\striker\hurdles.cpp
+	"Hurdles.h"
+
+1462898547 source:c:\users\tabish\db\dropbox\project\striker\backgroundgame.cpp
+	"BackgroundGame.h"
+
+1462898410 c:\users\tabish\db\dropbox\project\striker\backgroundgame.h
+	<iostream>
+	"allegro.h"
+
+1462898547 source:c:\users\tabish\db\dropbox\project\icemen\backgroundgame.cpp
+	"BackgroundGame.h"
+
+1462898410 c:\users\tabish\db\dropbox\project\icemen\backgroundgame.h
+	<iostream>
+	"allegro.h"
+
+1464364880 source:c:\users\tabish\db\dropbox\project\icemen\bullet.cpp
+	"Bullet.h"
+
+1464364845 c:\users\tabish\db\dropbox\project\icemen\bullet.h
+	<iostream>
+	"Object.h"
+	"math.h"
+	"allegro.h"
+
+1463170789 c:\users\tabish\db\dropbox\project\icemen\object.h
+	<iostream>
+	"allegro.h"
+	"vector"
+	<typeinfo>
+	"sstream"
+	<fstream>
+
+1464372198 source:c:\users\tabish\db\dropbox\project\icemen\enemy.cpp
+	"Enemy.h"
+
+1464372185 c:\users\tabish\db\dropbox\project\icemen\enemy.h
+	"allegro.h"
+	"Object.h"
+	"Powerup.h"
+	<iostream>
+	<fstream>
+
+1463127077 c:\users\tabish\db\dropbox\project\icemen\powerup.h
+	"Object.h"
+
+1465130986 source:c:\users\tabish\db\dropbox\project\icemen\flamethrower.cpp
+	"FlameThrower.h"
+	"sstream"
+
+1464365626 c:\users\tabish\db\dropbox\project\icemen\flamethrower.h
+	"Enemy.h"
+	"allegro.h"
+	<iostream>
+	<fstream>
+
+1464361773 source:c:\users\tabish\db\dropbox\project\icemen\hurdles.cpp
+	"Hurdles.h"
+
+1463170438 c:\users\tabish\db\dropbox\project\icemen\hurdles.h
+	"allegro.h"
+	"Object.h"
+	"vector"
+
+1464365543 source:c:\users\tabish\db\dropbox\project\icemen\linkedlist.cpp
+	"LinkedList.h"
+
+1464365436 c:\users\tabish\db\dropbox\project\icemen\linkedlist.h
+	"SnowMan.h"
+	"Enemy.h"
+	"FlameThrower.h"
+	"Hurdles.h"
+	<fstream>
+
+1464285816 c:\users\tabish\db\dropbox\project\icemen\snowman.h
+	<iostream>
+	"allegro.h"
+	"Object.h"
+	"Bullet.h"
+
+1464364292 source:c:\users\tabish\db\dropbox\project\icemen\main.cpp
+	<allegro.h>
+	<iostream>
+	"SnowMan.h"
+	"FlameThrower.h"
+	"LinkedList.cpp"
+	<cstdlib>
+	"time.h"
+	"Map.h"
+	"vector"
+	"BackgroundGame.h"
+	"Powerup.h"
+
+1464365543 c:\users\tabish\db\dropbox\project\icemen\linkedlist.cpp
+	"LinkedList.h"
+
+1463164257 c:\users\tabish\db\dropbox\project\icemen\map.h
+	"Object.h"
+	"allegro.h"
+	"fstream"
+	"sstream"
+	"Hurdles.h"
+	"FlameThrower.h"
+	"vector"
+
+1464289068 source:c:\users\tabish\db\dropbox\project\icemen\map.cpp
+	"Map.h"
+
+1464288184 source:c:\users\tabish\db\dropbox\project\icemen\powerup.cpp
+	"Powerup.h"
+
+1464363477 source:c:\users\tabish\db\dropbox\project\icemen\snowman.cpp
+	"SnowMan.h"
+
