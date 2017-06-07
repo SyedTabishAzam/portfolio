@@ -1,0 +1,1388 @@
+% PSTricks TeX macro
+% Title: C:\Users\Tabish\Desktop\Oop\Ass 10\SNOWBROS.dia
+% Creator: Dia v0.97.2
+% CreationDate: Wed Apr 13 01:58:02 2016
+% For: Tabish
+% \usepackage{pstricks}
+% The following commands are not supported in PSTricks at present
+% We define them conditionally, so when they are implemented,
+% this pstricks file will use them.
+\ifx\setlinejoinmode\undefined
+  \newcommand{\setlinejoinmode}[1]{}
+\fi
+\ifx\setlinecaps\undefined
+  \newcommand{\setlinecaps}[1]{}
+\fi
+% This way define your own fonts mapping (for example with ifthen)
+\ifx\setfont\undefined
+  \newcommand{\setfont}[2]{}
+\fi
+\pspicture(-96.042279,-52.164754)(-30.360890,8.925598)
+\psscalebox{1.000000 -1.000000}{
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\newrgbcolor{diafillcolor}{1.000000 1.000000 1.000000}%
+\psset{fillcolor=diafillcolor}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-73.981672,-1.810038)(-73.981672,-0.410038)(-64.241672,-0.410038)(-64.241672,-1.810038)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-73.981672,-1.810038)(-73.981672,-0.410038)(-64.241672,-0.410038)(-64.241672,-1.810038)
+\setfont{Helvetica}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-69.111672,-0.810038){\psscalebox{1 -1}{Object }}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-73.981672,-0.410038)(-73.981672,2.989962)(-64.241672,2.989962)(-64.241672,-0.410038)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-73.981672,-0.410038)(-73.981672,2.989962)(-64.241672,2.989962)(-64.241672,-0.410038)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-73.831672,0.249962){\psscalebox{1 -1}{-position: Point}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-73.831672,1.049962){\psscalebox{1 -1}{-alive: bool}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-73.831672,1.849962){\psscalebox{1 -1}{-type: int}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-73.831672,2.649962){\psscalebox{1 -1}{-image: BITMAP*}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-73.981672,2.989962)(-73.981672,9.589962)(-64.241672,9.589962)(-64.241672,2.989962)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-73.981672,2.989962)(-73.981672,9.589962)(-64.241672,9.589962)(-64.241672,2.989962)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-73.831672,3.649962){\psscalebox{1 -1}{+\~{}Object()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-73.831672,4.449962){\psscalebox{1 -1}{+SetAlive(): void}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-73.831672,5.249962){\psscalebox{1 -1}{+GetAlive(): bool}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-73.831672,6.049962){\psscalebox{1 -1}{+SetPosition(): void}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-73.831672,6.849962){\psscalebox{1 -1}{+GetPosition(): Position}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-73.831672,7.649962){\psscalebox{1 -1}{+Move(): void}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-73.831672,8.449962){\psscalebox{1 -1}{+Fire(): Object*}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-73.831672,9.249962){\psscalebox{1 -1}{+Draw(buffer:BITMAP*)}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-86.653552,15.813979)(-86.653552,17.213979)(-75.373552,17.213979)(-75.373552,15.813979)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-86.653552,15.813979)(-86.653552,17.213979)(-75.373552,17.213979)(-75.373552,15.813979)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-81.013552,16.813979){\psscalebox{1 -1}{SnowMan}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-86.653552,17.213979)(-86.653552,21.413979)(-75.373552,21.413979)(-75.373552,17.213979)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-86.653552,17.213979)(-86.653552,21.413979)(-75.373552,21.413979)(-75.373552,17.213979)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-86.503552,17.873979){\psscalebox{1 -1}{-BulletType: int}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-86.503552,18.673979){\psscalebox{1 -1}{-state: int}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-86.503552,19.473979){\psscalebox{1 -1}{-position: Point}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-86.503552,20.273979){\psscalebox{1 -1}{-score: int}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-86.503552,21.073979){\psscalebox{1 -1}{-}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-86.653552,21.413979)(-86.653552,28.813979)(-75.373552,28.813979)(-75.373552,21.413979)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-86.653552,21.413979)(-86.653552,28.813979)(-75.373552,28.813979)(-75.373552,21.413979)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-86.503552,22.073979){\psscalebox{1 -1}{+SnowMan()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-86.503552,22.873979){\psscalebox{1 -1}{+\~{}SnowMan()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-86.503552,23.673979){\psscalebox{1 -1}{+Draw(buffer:BITMAP*): void}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-86.503552,24.473979){\psscalebox{1 -1}{+Move(): void}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-86.503552,25.273979){\psscalebox{1 -1}{+SetPosition(position:Point)}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-86.503552,26.073979){\psscalebox{1 -1}{+GetPosition(): Point}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-86.503552,26.873979){\psscalebox{1 -1}{+Fire(): Object*}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-86.503552,27.673979){\psscalebox{1 -1}{+GetScore(): int}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-86.503552,28.473979){\psscalebox{1 -1}{+SetScore(new:int): void}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-68.512319,15.966371)(-68.512319,17.366371)(-63.007319,17.366371)(-63.007319,15.966371)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-68.512319,15.966371)(-68.512319,17.366371)(-63.007319,17.366371)(-63.007319,15.966371)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-65.759819,16.966371){\psscalebox{1 -1}{Enemy}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-68.512319,17.366371)(-68.512319,17.766371)(-63.007319,17.766371)(-63.007319,17.366371)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-68.512319,17.366371)(-68.512319,17.766371)(-63.007319,17.766371)(-63.007319,17.366371)
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-68.512319,17.766371)(-68.512319,21.166371)(-63.007319,21.166371)(-63.007319,17.766371)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-68.512319,17.766371)(-68.512319,21.166371)(-63.007319,21.166371)(-63.007319,17.766371)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-68.362319,18.426371){\psscalebox{1 -1}{+Enemy()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-68.362319,19.226371){\psscalebox{1 -1}{+\~{}Enemy()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-68.362319,20.026371){\psscalebox{1 -1}{+Draw(): void}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-68.362319,20.826371){\psscalebox{1 -1}{+Move(): void}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-60.950215,15.948792)(-60.950215,17.348792)(-56.600215,17.348792)(-56.600215,15.948792)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-60.950215,15.948792)(-60.950215,17.348792)(-56.600215,17.348792)(-56.600215,15.948792)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-58.775215,16.948792){\psscalebox{1 -1}{Bullet}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-60.950215,17.348792)(-60.950215,18.348792)(-56.600215,18.348792)(-56.600215,17.348792)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-60.950215,17.348792)(-60.950215,18.348792)(-56.600215,18.348792)(-56.600215,17.348792)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-60.800215,18.008792){\psscalebox{1 -1}{+type: int}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-60.950215,18.348792)(-60.950215,20.148792)(-56.600215,20.148792)(-56.600215,18.348792)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-60.950215,18.348792)(-60.950215,20.148792)(-56.600215,20.148792)(-56.600215,18.348792)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-60.800215,19.008792){\psscalebox{1 -1}{+Bullet()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-60.800215,19.808792){\psscalebox{1 -1}{+\~{}Bullet()}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-52.656966,16.098792)(-52.656966,17.498792)(-46.381966,17.498792)(-46.381966,16.098792)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-52.656966,16.098792)(-52.656966,17.498792)(-46.381966,17.498792)(-46.381966,16.098792)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-49.519466,17.098792){\psscalebox{1 -1}{PowerUp}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-52.656966,17.498792)(-52.656966,18.498792)(-46.381966,18.498792)(-46.381966,17.498792)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-52.656966,17.498792)(-52.656966,18.498792)(-46.381966,18.498792)(-46.381966,17.498792)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-52.506966,18.158792){\psscalebox{1 -1}{-duration: int}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-52.656966,18.498792)(-52.656966,21.098792)(-46.381966,21.098792)(-46.381966,18.498792)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-52.656966,18.498792)(-52.656966,21.098792)(-46.381966,21.098792)(-46.381966,18.498792)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-52.506966,19.158792){\psscalebox{1 -1}{+DeterminePup()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-52.506966,19.958792){\psscalebox{1 -1}{+PowerUp()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-52.506966,20.758792){\psscalebox{1 -1}{+\~{}PowerUp()}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-59.595978,22.209044)(-59.595978,23.609044)(-51.010978,23.609044)(-51.010978,22.209044)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-59.595978,22.209044)(-59.595978,23.609044)(-51.010978,23.609044)(-51.010978,22.209044)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-55.303478,23.209044){\psscalebox{1 -1}{Edible}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-59.595978,23.609044)(-59.595978,24.609044)(-51.010978,24.609044)(-51.010978,23.609044)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-59.595978,23.609044)(-59.595978,24.609044)(-51.010978,24.609044)(-51.010978,23.609044)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-59.445978,24.269044){\psscalebox{1 -1}{-score: int}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-59.595978,24.609044)(-59.595978,27.209044)(-51.010978,27.209044)(-51.010978,24.609044)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-59.595978,24.609044)(-59.595978,27.209044)(-51.010978,27.209044)(-51.010978,24.609044)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-59.445978,25.269044){\psscalebox{1 -1}{+GenerateScore(): int}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-59.445978,26.069044){\psscalebox{1 -1}{+Edible()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-59.445978,26.869044){\psscalebox{1 -1}{+\~{}Edible()}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-41.298181,24.135614)(-41.298181,25.535614)(-34.253181,25.535614)(-34.253181,24.135614)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-41.298181,24.135614)(-41.298181,25.535614)(-34.253181,25.535614)(-34.253181,24.135614)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-37.775681,25.135614){\psscalebox{1 -1}{Bottle}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-41.298181,25.535614)(-41.298181,26.535614)(-34.253181,26.535614)(-34.253181,25.535614)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-41.298181,25.535614)(-41.298181,26.535614)(-34.253181,26.535614)(-34.253181,25.535614)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-41.148181,26.195614){\psscalebox{1 -1}{-effect}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-41.298181,26.535614)(-41.298181,27.535614)(-34.253181,27.535614)(-34.253181,26.535614)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-41.298181,26.535614)(-41.298181,27.535614)(-34.253181,27.535614)(-34.253181,26.535614)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-41.148181,27.195614){\psscalebox{1 -1}{+GetEffect(): int}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-44.708704,31.019913)(-44.708704,32.419913)(-41.513704,32.419913)(-41.513704,31.019913)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-44.708704,31.019913)(-44.708704,32.419913)(-41.513704,32.419913)(-41.513704,31.019913)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-43.111204,32.019913){\psscalebox{1 -1}{Red}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-44.708704,32.419913)(-44.708704,32.819913)(-41.513704,32.819913)(-41.513704,32.419913)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-44.708704,32.419913)(-44.708704,32.819913)(-41.513704,32.819913)(-41.513704,32.419913)
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-44.708704,32.819913)(-44.708704,34.619913)(-41.513704,34.619913)(-41.513704,32.819913)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-44.708704,32.819913)(-44.708704,34.619913)(-41.513704,34.619913)(-41.513704,32.819913)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-44.558704,33.479913){\psscalebox{1 -1}{+Red()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-44.558704,34.279913){\psscalebox{1 -1}{+\~{}Red()}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-39.957925,30.920346)(-39.957925,32.320346)(-35.607925,32.320346)(-35.607925,30.920346)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-39.957925,30.920346)(-39.957925,32.320346)(-35.607925,32.320346)(-35.607925,30.920346)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-37.782925,31.920346){\psscalebox{1 -1}{Yellow}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-39.957925,32.320346)(-39.957925,32.720346)(-35.607925,32.720346)(-35.607925,32.320346)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-39.957925,32.320346)(-39.957925,32.720346)(-35.607925,32.720346)(-35.607925,32.320346)
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-39.957925,32.720346)(-39.957925,34.520346)(-35.607925,34.520346)(-35.607925,32.720346)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-39.957925,32.720346)(-39.957925,34.520346)(-35.607925,34.520346)(-35.607925,32.720346)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-39.807925,33.380346){\psscalebox{1 -1}{+Yellow()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-39.807925,34.180346){\psscalebox{1 -1}{+\~{}Yellow()}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-33.990890,31.149597)(-33.990890,32.549597)(-30.410890,32.549597)(-30.410890,31.149597)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-33.990890,31.149597)(-33.990890,32.549597)(-30.410890,32.549597)(-30.410890,31.149597)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-32.200890,32.149597){\psscalebox{1 -1}{Blue}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-33.990890,32.549597)(-33.990890,32.949597)(-30.410890,32.949597)(-30.410890,32.549597)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-33.990890,32.549597)(-33.990890,32.949597)(-30.410890,32.949597)(-30.410890,32.549597)
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-33.990890,32.949597)(-33.990890,34.749597)(-30.410890,34.749597)(-30.410890,32.949597)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-33.990890,32.949597)(-33.990890,34.749597)(-30.410890,34.749597)(-30.410890,32.949597)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-33.840890,33.609597){\psscalebox{1 -1}{+Blue()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-33.840890,34.409597){\psscalebox{1 -1}{+\~{}Blue()}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-62.106975,33.278335)(-62.106975,34.678335)(-58.141975,34.678335)(-58.141975,33.278335)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-62.106975,33.278335)(-62.106975,34.678335)(-58.141975,34.678335)(-58.141975,33.278335)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-60.124475,34.278335){\psscalebox{1 -1}{Pizza}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-62.106975,34.678335)(-62.106975,35.078335)(-58.141975,35.078335)(-58.141975,34.678335)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-62.106975,34.678335)(-62.106975,35.078335)(-58.141975,35.078335)(-58.141975,34.678335)
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-62.106975,35.078335)(-62.106975,36.878335)(-58.141975,36.878335)(-58.141975,35.078335)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-62.106975,35.078335)(-62.106975,36.878335)(-58.141975,36.878335)(-58.141975,35.078335)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-61.956975,35.738335){\psscalebox{1 -1}{+Pizza()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-61.956975,36.538335){\psscalebox{1 -1}{+\~{}Pizza()}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-52.002658,33.182943)(-52.002658,34.582943)(-47.652658,34.582943)(-47.652658,33.182943)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-52.002658,33.182943)(-52.002658,34.582943)(-47.652658,34.582943)(-47.652658,33.182943)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-49.827658,34.182943){\psscalebox{1 -1}{Burger}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-52.002658,34.582943)(-52.002658,34.982943)(-47.652658,34.982943)(-47.652658,34.582943)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-52.002658,34.582943)(-52.002658,34.982943)(-47.652658,34.982943)(-47.652658,34.582943)
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-52.002658,34.982943)(-52.002658,36.782943)(-47.652658,36.782943)(-47.652658,34.982943)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-52.002658,34.982943)(-52.002658,36.782943)(-47.652658,36.782943)(-47.652658,34.982943)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-51.852658,35.642943){\psscalebox{1 -1}{+Burger()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-51.852658,36.442943){\psscalebox{1 -1}{+\~{}Burger()}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-78.727708,43.914754)(-78.727708,45.314754)(-68.217708,45.314754)(-68.217708,43.914754)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-78.727708,43.914754)(-78.727708,45.314754)(-68.217708,45.314754)(-68.217708,43.914754)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-73.472708,44.914754){\psscalebox{1 -1}{Screen}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-78.727708,45.314754)(-78.727708,47.914754)(-68.217708,47.914754)(-68.217708,45.314754)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-78.727708,45.314754)(-78.727708,47.914754)(-68.217708,47.914754)(-68.217708,45.314754)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-78.577708,45.974754){\psscalebox{1 -1}{-image: BITMAP*}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-78.577708,46.774754){\psscalebox{1 -1}{-start: point}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-78.577708,47.574754){\psscalebox{1 -1}{-type: int}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-78.727708,47.914754)(-78.727708,52.114754)(-68.217708,52.114754)(-68.217708,47.914754)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-78.727708,47.914754)(-78.727708,52.114754)(-68.217708,52.114754)(-68.217708,47.914754)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-78.577708,48.574754){\psscalebox{1 -1}{+Screen()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-78.577708,49.374754){\psscalebox{1 -1}{+\~{}Screen()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-78.577708,50.174754){\psscalebox{1 -1}{+MoveCursor(direction:int)}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-78.577708,50.974754){\psscalebox{1 -1}{+GetSelect(): int}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-78.577708,51.774754){\psscalebox{1 -1}{+GetScreen(): int}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-90.680042,44.282567)(-90.680042,45.682567)(-82.480042,45.682567)(-82.480042,44.282567)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-90.680042,44.282567)(-90.680042,45.682567)(-82.480042,45.682567)(-82.480042,44.282567)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-86.580042,45.282567){\psscalebox{1 -1}{Splash}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-90.680042,45.682567)(-90.680042,48.282567)(-82.480042,48.282567)(-82.480042,45.682567)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-90.680042,45.682567)(-90.680042,48.282567)(-82.480042,48.282567)(-82.480042,45.682567)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-90.530042,46.342567){\psscalebox{1 -1}{-alive: bool}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-90.530042,47.142567){\psscalebox{1 -1}{-duration: int}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-90.530042,47.942567){\psscalebox{1 -1}{-text: string}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-90.680042,48.282567)(-90.680042,51.682567)(-82.480042,51.682567)(-82.480042,48.282567)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-90.680042,48.282567)(-90.680042,51.682567)(-82.480042,51.682567)(-82.480042,48.282567)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-90.530042,48.942567){\psscalebox{1 -1}{+Splash()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-90.530042,49.742567){\psscalebox{1 -1}{+\~{}Splash()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-90.530042,50.542567){\psscalebox{1 -1}{+WriteText(): void}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-90.530042,51.342567){\psscalebox{1 -1}{+ClearScreen(): void}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-77.598257,34.362761)(-77.598257,35.762761)(-69.398257,35.762761)(-69.398257,34.362761)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-77.598257,34.362761)(-77.598257,35.762761)(-69.398257,35.762761)(-69.398257,34.362761)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-73.498257,35.362761){\psscalebox{1 -1}{Game}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-77.598257,35.762761)(-77.598257,36.162761)(-69.398257,36.162761)(-69.398257,35.762761)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-77.598257,35.762761)(-77.598257,36.162761)(-69.398257,36.162761)(-69.398257,35.762761)
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-77.598257,36.162761)(-77.598257,39.562761)(-69.398257,39.562761)(-69.398257,36.162761)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-77.598257,36.162761)(-77.598257,39.562761)(-69.398257,39.562761)(-69.398257,36.162761)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-77.448257,36.822761){\psscalebox{1 -1}{+Game()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-77.448257,37.622761){\psscalebox{1 -1}{+\~{}Game()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-77.448257,38.422761){\psscalebox{1 -1}{+DrawCredits(): void}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-77.448257,39.222761){\psscalebox{1 -1}{+DrawScore(): void}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-63.606245,44.762192)(-63.606245,46.162192)(-52.326245,46.162192)(-52.326245,44.762192)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-63.606245,44.762192)(-63.606245,46.162192)(-52.326245,46.162192)(-52.326245,44.762192)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-57.966245,45.762192){\psscalebox{1 -1}{End}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-63.606245,46.162192)(-63.606245,47.962192)(-52.326245,47.962192)(-52.326245,46.162192)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-63.606245,46.162192)(-63.606245,47.962192)(-52.326245,47.962192)(-52.326245,46.162192)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-63.456245,46.822192){\psscalebox{1 -1}{-alive: bool}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-63.456245,47.622192){\psscalebox{1 -1}{-text: string}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-63.606245,47.962192)(-63.606245,51.362192)(-52.326245,51.362192)(-52.326245,47.962192)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-63.606245,47.962192)(-63.606245,51.362192)(-52.326245,51.362192)(-52.326245,47.962192)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-63.456245,48.622192){\psscalebox{1 -1}{+End()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-63.456245,49.422192){\psscalebox{1 -1}{+\~{}End()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-63.456245,50.222192){\psscalebox{1 -1}{+WriteText(): void}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-63.456245,51.022192){\psscalebox{1 -1}{+WriteScore(score:int): void}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-95.992279,8.669745)(-95.992279,10.069745)(-87.792279,10.069745)(-87.792279,8.669745)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-95.992279,8.669745)(-95.992279,10.069745)(-87.792279,10.069745)(-87.792279,8.669745)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-91.892279,9.669745){\psscalebox{1 -1}{Map}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-95.992279,10.069745)(-95.992279,11.869745)(-87.792279,11.869745)(-87.792279,10.069745)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-95.992279,10.069745)(-95.992279,11.869745)(-87.792279,11.869745)(-87.792279,10.069745)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-95.842279,10.729745){\psscalebox{1 -1}{-Image: BITMAP*}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-95.842279,11.529745){\psscalebox{1 -1}{+level: int}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-95.992279,11.869745)(-95.992279,15.269745)(-87.792279,15.269745)(-87.792279,11.869745)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-95.992279,11.869745)(-95.992279,15.269745)(-87.792279,15.269745)(-87.792279,11.869745)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-95.842279,12.529745){\psscalebox{1 -1}{+Map()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-95.842279,13.329745){\psscalebox{1 -1}{+\~{}Map()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-95.842279,14.129745){\psscalebox{1 -1}{+GetSpecs(): void}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-95.842279,14.929745){\psscalebox{1 -1}{+ChangeLevel(): void}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-73.564631,24.852199)(-73.564631,26.252199)(-66.904631,26.252199)(-66.904631,24.852199)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-73.564631,24.852199)(-73.564631,26.252199)(-66.904631,26.252199)(-66.904631,24.852199)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-70.234631,25.852199){\psscalebox{1 -1}{FlameThrower}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-73.564631,26.252199)(-73.564631,26.652199)(-66.904631,26.652199)(-66.904631,26.252199)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-73.564631,26.252199)(-73.564631,26.652199)(-66.904631,26.652199)(-66.904631,26.252199)
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-73.564631,26.652199)(-73.564631,29.252199)(-66.904631,29.252199)(-66.904631,26.652199)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-73.564631,26.652199)(-73.564631,29.252199)(-66.904631,29.252199)(-66.904631,26.652199)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-73.414631,27.312199){\psscalebox{1 -1}{+Fire(): Object*}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-73.414631,28.112199){\psscalebox{1 -1}{+FlameThrower()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-73.414631,28.912199){\psscalebox{1 -1}{+\~{}FlameThrower()}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-65.433753,24.873087)(-65.433753,26.273087)(-61.468753,26.273087)(-61.468753,24.873087)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-65.433753,24.873087)(-65.433753,26.273087)(-61.468753,26.273087)(-61.468753,24.873087)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-63.451253,25.873087){\psscalebox{1 -1}{Tiger}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-65.433753,26.273087)(-65.433753,26.673087)(-61.468753,26.673087)(-61.468753,26.273087)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-65.433753,26.273087)(-65.433753,26.673087)(-61.468753,26.673087)(-61.468753,26.273087)
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-65.433753,26.673087)(-65.433753,28.473087)(-61.468753,28.473087)(-61.468753,26.673087)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-65.433753,26.673087)(-65.433753,28.473087)(-61.468753,28.473087)(-61.468753,26.673087)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-65.283753,27.333087){\psscalebox{1 -1}{+Tiger()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-65.283753,28.133087){\psscalebox{1 -1}{+\~{}Tiger()}}
+\setfont{Helvetica}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-88.500215,22.136292){\psscalebox{1 -1}{}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-69.111672,10.552117)(-69.111672,13.101946)(-81.013552,13.101946)(-81.013552,15.763580)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-68.711672,10.552117)(-69.111672,9.752117)(-69.511672,10.552117)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-68.711672,10.552117)(-69.111672,9.752117)(-69.511672,10.552117)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-69.111672,10.552117)(-69.111672,13.178180)(-65.759819,13.178180)(-65.759819,15.916047)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-68.711672,10.552117)(-69.111672,9.752117)(-69.511672,10.552117)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-68.711672,10.552117)(-69.111672,9.752117)(-69.511672,10.552117)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-69.111672,10.552117)(-69.111672,13.194553)(-58.775215,13.194553)(-58.775215,15.948792)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-68.711672,10.552117)(-69.111672,9.752117)(-69.511672,10.552117)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-68.711672,10.552117)(-69.111672,9.752117)(-69.511672,10.552117)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-69.111672,10.552117)(-69.111672,13.244397)(-49.519466,13.244397)(-49.519466,16.048481)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-68.711672,10.552117)(-69.111672,9.752117)(-69.511672,10.552117)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-68.711672,10.552117)(-69.111672,9.752117)(-69.511672,10.552117)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-65.759819,22.128498)(-65.759819,23.409309)(-70.234631,23.409309)(-70.234631,24.801925)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-65.359819,22.128498)(-65.759819,21.328498)(-66.159819,22.128498)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-65.359819,22.128498)(-65.759819,21.328498)(-66.159819,22.128498)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-65.759819,22.128498)(-65.759819,23.419665)(-63.451253,23.419665)(-63.451253,24.822635)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-65.359819,22.128498)(-65.759819,21.328498)(-66.159819,22.128498)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-65.359819,22.128498)(-65.759819,21.328498)(-66.159819,22.128498)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-47.700215,-1.402760)(-47.700215,-0.002760)(-35.650215,-0.002760)(-35.650215,-1.402760)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-47.700215,-1.402760)(-47.700215,-0.002760)(-35.650215,-0.002760)(-35.650215,-1.402760)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-41.675215,-0.402760){\psscalebox{1 -1}{LinkedList}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-47.700215,-0.002760)(-47.700215,2.597240)(-35.650215,2.597240)(-35.650215,-0.002760)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-47.700215,-0.002760)(-47.700215,2.597240)(-35.650215,2.597240)(-35.650215,-0.002760)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-47.550215,0.657240){\psscalebox{1 -1}{-head: Node*}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-47.550215,1.457240){\psscalebox{1 -1}{-tail: Node*}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-47.550215,2.257240){\psscalebox{1 -1}{-length: int}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-47.700215,2.597240)(-47.700215,9.197240)(-35.650215,9.197240)(-35.650215,2.597240)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-47.700215,2.597240)(-47.700215,9.197240)(-35.650215,9.197240)(-35.650215,2.597240)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-47.550215,3.257240){\psscalebox{1 -1}{+Push(obj:Object*): void}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-47.550215,4.057240){\psscalebox{1 -1}{+Pop(): Obj*}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-47.550215,4.857240){\psscalebox{1 -1}{+GetLength(): int}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-47.550215,5.657240){\psscalebox{1 -1}{+DrawAll(buffer:BITMAP*): void}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-47.550215,6.457240){\psscalebox{1 -1}{+MoveAll(): void}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-47.550215,7.257240){\psscalebox{1 -1}{+CleanAll(): void}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-47.550215,8.057240){\psscalebox{1 -1}{+LinkedList()}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-47.550215,8.857240){\psscalebox{1 -1}{+\~{}LinkedList()}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-58.666637,1.709656)(-58.666637,3.109656)(-53.161637,3.109656)(-53.161637,1.709656)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-58.666637,1.709656)(-58.666637,3.109656)(-53.161637,3.109656)(-53.161637,1.709656)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-55.914137,2.709656){\psscalebox{1 -1}{Nodes}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-58.666637,3.109656)(-58.666637,5.709656)(-53.161637,5.709656)(-53.161637,3.109656)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-58.666637,3.109656)(-58.666637,5.709656)(-53.161637,5.709656)(-53.161637,3.109656)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-58.516637,3.769656){\psscalebox{1 -1}{+head: Node*}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-58.516637,4.569656){\psscalebox{1 -1}{+tail: Node*}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-58.516637,5.369656){\psscalebox{1 -1}{+obj: Object*}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-58.666637,5.709656)(-58.666637,6.109656)(-53.161637,6.109656)(-53.161637,5.709656)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-58.666637,5.709656)(-58.666637,6.109656)(-53.161637,6.109656)(-53.161637,5.709656)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-79.689835,48.014754)(-81.003910,48.014754)(-81.003910,47.982567)(-82.429789,47.982567)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-79.689835,48.414754)(-78.889835,48.014754)(-79.689835,47.614754)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-79.689835,48.414754)(-78.889835,48.014754)(-79.689835,47.614754)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-73.472708,42.952697)(-73.472708,41.338793)(-73.498257,41.338793)(-73.498257,39.613085)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-73.872708,42.952697)(-73.472708,43.752697)(-73.072708,42.952697)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-73.872708,42.952697)(-73.472708,43.752697)(-73.072708,42.952697)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-67.255581,48.014754)(-65.511988,48.014754)(-65.511988,48.062192)(-63.656593,48.062192)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-67.255581,47.614754)(-68.055581,48.014754)(-67.255581,48.414754)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-67.255581,47.614754)(-68.055581,48.014754)(-67.255581,48.414754)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-55.303478,28.171159)(-55.303478,30.643619)(-60.124475,30.643619)(-60.124475,33.227883)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-54.903478,28.171159)(-55.303478,27.371159)(-55.703478,28.171159)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-54.903478,28.171159)(-55.303478,27.371159)(-55.703478,28.171159)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-55.303478,28.171159)(-55.303478,30.595923)(-49.827658,30.595923)(-49.827658,33.132491)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-54.903478,28.171159)(-55.303478,27.371159)(-55.703478,28.171159)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-54.903478,28.171159)(-55.303478,27.371159)(-55.703478,28.171159)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-37.775681,28.497845)(-37.775681,29.677751)(-43.111204,29.677751)(-43.111204,30.969461)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-37.375681,28.497845)(-37.775681,27.697845)(-38.175681,28.497845)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-37.375681,28.497845)(-37.775681,27.697845)(-38.175681,28.497845)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-37.775681,28.497845)(-37.775681,29.627968)(-37.782925,29.627968)(-37.782925,30.869895)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-37.375681,28.497845)(-37.775681,27.697845)(-38.175681,28.497845)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-37.375681,28.497845)(-37.775681,27.697845)(-38.175681,28.497845)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-37.775681,28.497845)(-37.775681,29.742593)(-32.200890,29.742593)(-32.200890,31.099145)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-37.375681,28.497845)(-37.775681,27.697845)(-38.175681,28.497845)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-37.375681,28.497845)(-37.775681,27.697845)(-38.175681,28.497845)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-49.519466,22.060907)(-49.519466,23.017145)(-37.775681,23.017145)(-37.775681,24.085187)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-49.119466,22.060907)(-49.519466,21.260907)(-49.919466,22.060907)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-49.119466,22.060907)(-49.519466,21.260907)(-49.919466,22.060907)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-49.519466,22.060907)(-49.519466,24.709044)(-50.960713,24.709044)
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-49.119466,22.060907)(-49.519466,21.260907)(-49.919466,22.060907)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-49.119466,22.060907)(-49.519466,21.260907)(-49.919466,22.060907)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-86.483447,11.969745)(-80.511849,11.969745)(-80.511849,2.489962)(-73.981672,2.489962)
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-87.742026,11.969745)(-87.042026,11.729745)(-86.342026,11.969745)(-87.042026,12.209745)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-87.742026,11.969745)(-87.042026,11.729745)(-86.342026,11.969745)(-87.042026,12.209745)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-80.311849,7.229853)(-80.311849,6.829853)(-79.911849,7.029853)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-86.142026,11.769745){\psscalebox{1 -1}{*}}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[r](-74.181672,2.289962){\psscalebox{1 -1}{*}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-49.009164,3.897240)(-50.780940,3.897240)(-50.780940,3.909656)(-53.111295,3.909656)
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-47.750586,3.897240)(-48.450586,4.137240)(-49.150586,3.897240)(-48.450586,3.657240)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-47.750586,3.897240)(-48.450586,4.137240)(-49.150586,3.897240)(-48.450586,3.657240)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[r](-49.350586,3.297240){\psscalebox{1 -1}{ 1}}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-52.911295,3.309656){\psscalebox{1 -1}{ *}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-59.975558,3.909656)(-61.804175,3.909656)(-61.804175,3.889962)(-64.191372,3.889962)
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-58.716979,3.909656)(-59.416979,4.149656)(-60.116979,3.909656)(-59.416979,3.669656)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-58.716979,3.909656)(-59.416979,4.149656)(-60.116979,3.909656)(-59.416979,3.669656)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[r](-60.316979,3.309656){\psscalebox{1 -1}{ 1}}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-63.991372,3.289962){\psscalebox{1 -1}{ 1}}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-91.892279,16.578684)(-91.892279,31.626790)(-73.498257,31.626790)(-73.498257,34.312688)
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-91.892279,15.320105)(-91.652279,16.020105)(-91.892279,16.720105)(-92.132279,16.020105)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-91.892279,15.320105)(-91.652279,16.020105)(-91.892279,16.720105)(-92.132279,16.020105)
+\setfont{Courier}{0.800000}
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-71.108510,-8.875598)(-71.108510,-7.475598)(-67.143510,-7.475598)(-67.143510,-8.875598)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-71.108510,-8.875598)(-71.108510,-7.475598)(-67.143510,-7.475598)(-67.143510,-8.875598)
+\setfont{Helvetica-Bold}{1.000000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput(-69.126010,-7.875598){\psscalebox{1 -1}{Point}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-71.108510,-7.475598)(-71.108510,-5.675598)(-67.143510,-5.675598)(-67.143510,-7.475598)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-71.108510,-7.475598)(-71.108510,-5.675598)(-67.143510,-5.675598)(-67.143510,-7.475598)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-70.958510,-6.815598){\psscalebox{1 -1}{+x: float}}
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-70.958510,-6.015598){\psscalebox{1 -1}{+y: float}}
+\newrgbcolor{dialinecolor}{1.000000 1.000000 1.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-71.108510,-5.675598)(-71.108510,-5.275598)(-67.143510,-5.275598)(-67.143510,-5.675598)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon(-71.108510,-5.675598)(-71.108510,-5.275598)(-67.143510,-5.275598)(-67.143510,-5.675598)
+\psset{linewidth=0.100000cm}
+\psset{linestyle=solid}
+\setlinejoinmode{0}
+\setlinecaps{0}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\psline(-69.126010,-5.225146)(-69.126010,-3.542767)(-69.111672,-3.542767)(-69.111672,-1.860389)
+\setfont{Courier}{0.800000}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\pspolygon*(-69.018841,-3.542767)(-69.018841,-3.942767)(-68.618841,-3.742767)
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-68.926010,-4.625146){\psscalebox{1 -1}{1}}
+\newrgbcolor{dialinecolor}{0.000000 0.000000 0.000000}%
+\psset{linecolor=dialinecolor}
+\rput[l](-68.911672,-2.060389){\psscalebox{1 -1}{1}}
+}\endpspicture

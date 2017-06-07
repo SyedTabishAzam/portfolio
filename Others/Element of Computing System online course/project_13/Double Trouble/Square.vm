@@ -1,0 +1,672 @@
+function Square.new 0
+push constant 4
+call Memory.alloc 1
+pop pointer 0
+push argument 0
+pop this 0
+push argument 1
+pop this 1
+push argument 2
+pop this 3
+push argument 3
+pop this 2
+push pointer 0
+call Square.draw 1
+pop temp 0
+push pointer 0
+return
+function Square.dispose 0
+push argument 0
+pop pointer 0
+push pointer 0
+call Memory.deAlloc 1
+pop temp 0
+push constant 0
+return
+function Square.draw 0
+push argument 0
+pop pointer 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 1
+push this 0
+push this 3
+add
+push this 1
+push this 3
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 2
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 2
+not
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 0
+add
+push this 3
+add
+push constant 2
+call Math.divide 2
+push this 1
+push this 1
+add
+push this 3
+add
+push constant 2
+call Math.divide 2
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+label IF_FALSE0
+push this 2
+not
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push this 2
+call Screen.setColor 1
+pop temp 0
+push this 0
+push constant 10
+add
+push this 1
+push constant 5
+add
+push this 0
+push this 3
+add
+push constant 10
+sub
+push this 1
+push this 1
+add
+push this 3
+add
+push constant 2
+call Math.divide 2
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE1
+push constant 0
+return
+function Square.xcoordinates 0
+push argument 0
+pop pointer 0
+push this 0
+return
+function Square.ycoordinates 0
+push argument 0
+pop pointer 0
+push this 1
+return
+function Square.rsize 0
+push argument 0
+pop pointer 0
+push this 3
+return
+function Square.moveUp 0
+push argument 0
+pop pointer 0
+push this 1
+push constant 1
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 1
+push constant 2
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 20
+push constant 0
+call Output.moveCursor 2
+pop temp 0
+push constant 9
+call String.new 1
+push constant 71
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 77
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 86
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+call Output.println 0
+pop temp 0
+call Sys.halt 0
+pop temp 0
+label IF_FALSE1
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 1
+push this 0
+push this 3
+add
+push this 1
+push this 3
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 1
+push constant 1
+sub
+pop this 1
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 1
+push this 0
+push this 3
+add
+push this 1
+push this 3
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 2
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push this 2
+not
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 0
+add
+push this 3
+add
+push constant 2
+call Math.divide 2
+push this 1
+push this 1
+add
+push this 3
+add
+push constant 2
+call Math.divide 2
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+label IF_FALSE2
+push this 2
+not
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push this 2
+call Screen.setColor 1
+pop temp 0
+push this 0
+push constant 10
+add
+push this 1
+push constant 5
+add
+push this 0
+push this 3
+add
+push constant 10
+sub
+push this 1
+push this 1
+add
+push this 3
+add
+push constant 2
+call Math.divide 2
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE3
+label IF_FALSE0
+push constant 0
+return
+function Square.moveDown 0
+push argument 0
+pop pointer 0
+push this 1
+push this 3
+add
+push constant 254
+lt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 1
+push this 3
+add
+push constant 236
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 0
+push constant 0
+call Output.moveCursor 2
+pop temp 0
+push constant 9
+call String.new 1
+push constant 71
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 77
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 86
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+call Output.println 0
+pop temp 0
+call Sys.halt 0
+pop temp 0
+label IF_FALSE1
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 1
+push this 0
+push this 3
+add
+push this 1
+push this 3
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 1
+push constant 1
+add
+pop this 1
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 1
+push this 0
+push this 3
+add
+push this 1
+push this 3
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 2
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push this 2
+not
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 0
+add
+push this 3
+add
+push constant 2
+call Math.divide 2
+push this 1
+push this 1
+add
+push this 3
+add
+push constant 2
+call Math.divide 2
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+label IF_FALSE2
+push this 2
+not
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push this 2
+call Screen.setColor 1
+pop temp 0
+push this 0
+push constant 10
+add
+push this 1
+push constant 5
+add
+push this 0
+push this 3
+add
+push constant 10
+sub
+push this 1
+push this 1
+add
+push this 3
+add
+push constant 2
+call Math.divide 2
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE3
+label IF_FALSE0
+push constant 0
+return
+function Square.moveLeft 0
+push argument 0
+pop pointer 0
+push this 0
+push constant 1
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 0
+push constant 2
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 0
+push constant 55
+call Output.moveCursor 2
+pop temp 0
+push constant 9
+call String.new 1
+push constant 71
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 77
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 86
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+call Output.println 0
+pop temp 0
+call Sys.halt 0
+pop temp 0
+label IF_FALSE1
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 1
+push this 0
+push this 3
+add
+push this 1
+push this 3
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 1
+sub
+pop this 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 1
+push this 0
+push this 3
+add
+push this 1
+push this 3
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 2
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push this 2
+not
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 0
+add
+push this 3
+add
+push constant 2
+call Math.divide 2
+push this 1
+push this 1
+add
+push this 3
+add
+push constant 2
+call Math.divide 2
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+label IF_FALSE2
+push this 2
+not
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push this 2
+call Screen.setColor 1
+pop temp 0
+push this 0
+push constant 10
+add
+push this 1
+push constant 5
+add
+push this 0
+push this 3
+add
+push constant 10
+sub
+push this 1
+push this 1
+add
+push this 3
+add
+push constant 2
+call Math.divide 2
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE3
+label IF_FALSE0
+push constant 0
+return
+function Square.moveRight 0
+push argument 0
+pop pointer 0
+push this 0
+push this 3
+add
+push constant 510
+lt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 0
+push this 3
+add
+push constant 508
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 0
+push constant 0
+call Output.moveCursor 2
+pop temp 0
+push constant 9
+call String.new 1
+push constant 71
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 77
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 86
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+call Output.println 0
+pop temp 0
+call Sys.halt 0
+pop temp 0
+label IF_FALSE1
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 1
+push this 0
+push this 3
+add
+push this 1
+push this 3
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 1
+add
+pop this 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 1
+push this 0
+push this 3
+add
+push this 1
+push this 3
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 2
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push this 2
+not
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 0
+add
+push this 3
+add
+push constant 2
+call Math.divide 2
+push this 1
+push this 1
+add
+push this 3
+add
+push constant 2
+call Math.divide 2
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+label IF_FALSE2
+push this 2
+not
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push this 2
+call Screen.setColor 1
+pop temp 0
+push this 0
+push constant 10
+add
+push this 1
+push constant 5
+add
+push this 0
+push this 3
+add
+push constant 10
+sub
+push this 1
+push this 1
+add
+push this 3
+add
+push constant 2
+call Math.divide 2
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE3
+label IF_FALSE0
+push constant 0
+return

@@ -1,0 +1,249 @@
+class food2{
+static int xt,yt,lenghtf2,breathf2;
+static int tempx2,tempy2;
+
+
+	
+    // Location on the screen
+    field int xof2, yof2;
+
+    // The size of the rectangle
+    field int sizef2;
+	
+	/** constructs new rectangle food for square 2 */
+    constructor food2 new(int Fx, int Fy, int Fxsize,int Fysize) {
+        let xof2 = Fx;
+        let yof2 = Fy;
+        let breathf2 = Fxsize;
+		let lenghtf2 = Fysize;
+		let tempx2 = xof2;
+		let tempy2 = yof2;
+        do draw();
+
+        return this;
+    }
+    /** Deallocates the object's memory. */
+    method void dispose() {
+        do Memory.deAlloc(this);
+        return;
+    }
+
+    
+    method void draw() {
+        do Screen.setColor(true);		//creates a rectangle
+        do Screen.drawRectangle(xof2, yof2, xof2 + breathf2, yof2 + lenghtf2);
+		do Screen.setColor(false);		//creates a hollow rectangle within a rectangle
+		do Screen.drawRectangle(xof2+2,yof2+2,(xof2+breathf2-2),(yof2+lenghtf2-2));
+		
+		
+        return;
+    }
+	
+	method void shiftfood(int newx2,int newy2){
+
+	do Screen.setColor(false);			//deletes the current rectangle from the screen
+	do Screen.drawRectangle(xof2, yof2, xof2 + breathf2, yof2 + lenghtf2);
+	let xof2 = newx2;	//makes the received x and y values, the current x and y value of rectangle
+	let yof2 = newy2;
+	let tempx2 = newx2;		//save received values in temporary x and temporary y variables for further use
+	let tempy2 = newy2;
+	do Screen.setColor(true);		//creates the rectangle on these new x and y values
+	do Screen.drawRectangle(xof2, yof2, xof2 + breathf2, yof2 + lenghtf2);
+	do Screen.setColor(false);		//creates hollow rectangle within a rectangle
+	do Screen.drawRectangle(xof2+2,yof2+2,(xof2+breathf2-2),(yof2+lenghtf2-2));
+
+return;
+}
+
+/** checks if the rectangle food has been eaten by any square */
+method boolean hasEaten(int x2,int y2,int sss2){
+
+//right left top and bottom referes to the walls of square
+if (checkright(x2,y2,sss2)=false){
+	if (checkleft(x2,y2,sss2)=false){
+		if (checktop(x2,y2,sss2)=false){
+			if (checkbottom(x2,y2,sss2)=false){
+			return false;			//returns false if the square hasnt been eaten
+			}
+		}
+	}			
+}
+return true;
+}
+
+//SAME LOGIC IS APPLIED AS IN COLLISION OF BOTH THE SQUARES
+method boolean checkright(int x2,int y2,int sss2){
+					var int dum;
+					var int dum2;
+					
+					var int dum3;
+					
+					let dum = y2;			//creates dummy variables and saves y coordinates of square
+					let dum2 = tempy2;		//saves y and x coordinates of this food class in dummy variables
+					let dum3 = tempx2;
+					let sss2 = 30;
+					
+					//checks if the right wall of square equals the left wall of food
+					if (((x2+sss2)=(tempx2))){		
+					
+						while (y2<(dum+sss2+1)){		//for every y coordinate of square from top to bottom
+							let y2 = y2 + 1	;	
+						
+							while (tempy2<(dum2+lenghtf2+1)){		//for every y coordinate of food from top to bottom
+						
+							
+								
+								if (y2=tempy2){				//if both y equals, return true
+							
+								
+							
+								
+										return true;
+								
+								}
+							
+							let tempy2 = tempy2 + 1;
+							}
+						
+						let tempy2 = dum2;				//restores the temporary y variable to its orignal value
+						}
+					
+					let y2=dum;			//restores the y coordinate variable to its orignal value
+					}
+				
+	return false;
+	
+
+}
+method boolean checkleft(int x2,int y2,int sss2){
+					var int dum;
+					var int dum2;
+					
+					var int dum3;
+					
+					let dum = y2;
+					let dum2 = tempy2;
+					let dum3 = tempx2;
+					let sss2 = 30;
+					if ((x2=(tempx2+breathf2))){			//checks if the left wall of square equals the right wall of food
+						while (y2<(dum+sss2+1)){			//for every y coordinate of square from top to bottom
+							let y2 = y2 + 1	;	
+						
+								while (tempy2<(dum2+lenghtf2+1)){			//for every y coordinate of rectangle from top to bottom
+						
+							
+							
+								if (y2=tempy2){			//if both y are equal, return true
+							
+								
+							
+								
+									return true;
+								
+								}
+							
+								let tempy2 = tempy2 + 1;
+								}
+						
+						let tempy2 = dum2;
+						}
+						let y2=dum;
+					}
+	return false;
+	
+
+}
+
+method boolean checktop(int x2,int y2,int sss2){
+					var int dum;
+					var int dum2;
+					
+					var int dum3;
+					
+					let dum = x2;
+					let dum2 = tempx2;
+					let dum3 = tempy2;
+					let sss2 = 30;
+					if (y2=(tempy2+lenghtf2)){					//checks if the top wall of square hits the bottom wall of food2
+						while (x2<(dum+sss2+1)){				//for every x of square from left to right
+							let x2 = x2 + 1	;	
+						
+							while (tempx2<(dum2+breathf2+1)){		//for every x of food2 from left to right
+							
+							
+							if ((x2=tempx2)){				//if both the x are equal, return true
+							
+							
+							
+								
+							
+								
+									return true;
+								
+							}
+							
+							let tempx2 = tempx2 + 1;
+							}
+						
+						let tempx2 = dum2;		//restores the temporary x to its orignal value
+						}
+					
+					let x2=dum;		//restores the x coordinate of square to its orignal value
+					}
+				
+	return false;
+	
+
+}
+
+method boolean checkbottom(int x2,int y2,int sss2){
+					var int dum;
+					var int dum2;
+					
+					var int dum3;
+					
+					let dum = x2;
+					let dum2 = tempx2;
+					let dum3 = tempy2;
+					let sss2 = 30;
+					if ((y2+sss2)=tempy2){				//checks if the bottom wall of square lies in the axis of top wall of food2
+						while (x2<(dum+sss2+1)){		//for every square x from left to right
+						let x2 = x2 + 1	;	
+						
+							while (tempx2<(dum2+breathf2+1)){		//for every food x from left to right
+							
+							
+								if ((x2=tempx2)){			//if both x equals, return true
+							
+							
+							
+								
+							
+								
+									return true;
+								
+								}
+							
+							let tempx2 = tempx2 + 1;
+							}
+						
+						
+						let tempx2 = dum2;
+						}
+					
+					let x2=dum;
+					}
+				
+	return false;
+	
+
+}
+method int xc(){
+return xt;			//returns current x coordinate of food 2
+}	
+
+method int yc(){
+return yt;		//returns current y coordinate of food 2 
+}
+
+}

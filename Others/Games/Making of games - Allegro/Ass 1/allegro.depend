@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1454427724 source:c:\users\tabish\desktop\da\allegro.cpp
+	<allegro.h>
+	"Ship.h"
+	<iostream>
+
+1454428393 c:\users\tabish\desktop\da\ship.h
+	"Point.h"
+	"Turret.h"
+
+1454428246 c:\users\tabish\desktop\da\point.h
+
+1454428820 c:\users\tabish\desktop\da\turret.h
+	"Point.h"
+	"allegro.h"
+
+1454224314 source:c:\users\tabish\desktop\da\point.cpp
+
+1454428947 source:c:\users\tabish\desktop\da\turret.cpp
+	"Turret.h"
+
+1454428920 source:c:\users\tabish\desktop\da\ship.cpp
+	"Ship.h"
+
+1454429222 source:c:\users\tabish\desktop\oop ass 1\allegro.cpp
+	<allegro.h>
+	"Ship.h"
+	<iostream>
+
+1454429049 c:\users\tabish\desktop\oop ass 1\ship.h
+	"Point.h"
+	"Turret.h"
+
+1454428246 c:\users\tabish\desktop\oop ass 1\point.h
+
+1454429184 c:\users\tabish\desktop\oop ass 1\turret.h
+	"Point.h"
+	"allegro.h"
+
+1454429177 source:c:\users\tabish\desktop\oop ass 1\ship.cpp
+	"Ship.h"
+
+1454429017 source:c:\users\tabish\desktop\oop ass 1\turret.cpp
+	"Turret.h"
+

@@ -1,0 +1,169 @@
+
+class Square {
+	
+    // Location on the screen
+    field int x, y;
+	field boolean scndshape;
+
+    // The size of the square
+    field int size;
+	
+	
+    /** Constructs a new square with a given location and size. */
+    constructor Square new(int Ax, int Ay, int Asize,boolean ss) {
+        let x = Ax;
+        let y = Ay;
+        let size = Asize;
+		let scndshape = ss;		//used for making a shape within a square
+        do draw();
+
+        return this;
+    }
+    /** Deallocates the object's memory. */
+    method void dispose() {
+        do Memory.deAlloc(this);
+        return;
+    }
+
+    /** Draws the square on the screen. */
+    method void draw() {
+        do Screen.setColor(true);					
+        do Screen.drawRectangle(x, y, x + size, y + size);			//draws a basic rectangle
+		if (scndshape){											//if scndshape boolean is true, then it makes a circle inside a square
+		do Screen.setColor(~(scndshape));
+		do Screen.drawCircle(((x+x+size)/2),((y+y+size)/2),10);
+		}
+		if (~(scndshape)){										//else it makes a rectangle inside square
+		do Screen.setColor(scndshape);
+		do Screen.drawRectangle((x+10),(y+5),(x+size-10),(((y+y+size)/2)+10));
+		}
+        return;
+    }
+	method int xcoordinates(){								//returns x coordinates of square
+	return (x);
+	}
+	method int ycoordinates(){			//returns size of square
+	return (y);
+	}
+	method int rsize(){				//returns lenght of square
+	return (size);
+	}
+	
+
+    /** Moves up by 1 pixels. */
+    method void moveUp() {
+        if (y > 1) {			//perform upmovement if y>1
+	    if (y=2){				// if y is very close to top wall, end the game
+
+		do Output.moveCursor(20,0);
+		do Output.printString("GAME OVER");
+        do Output.println();
+		do Sys.halt();
+		
+		}
+            do Screen.setColor(false);				//deletes the current square
+            do Screen.drawRectangle(x, y, x + size, y + size);
+			
+            let y = y - 1;			//reduces y
+            do Screen.setColor(true);				//creates a new rectangle on this reduced square's y (one step upwards)
+            do Screen.drawRectangle(x, y, x + size, y + size);
+			if (scndshape){				//recreates the scndshape inside the square
+		do Screen.setColor(~(scndshape));
+		do Screen.drawCircle(((x+x+size)/2),((y+y+size)/2),10);
+		}
+		if (~(scndshape)){
+		do Screen.setColor(scndshape);
+		do Screen.drawRectangle((x+10),(y+5),(x+size-10),(((y+y+size)/2)+10));
+		}
+			
+        }
+        return;
+    }
+
+    /** Moves down by 1 pixels. */
+    method void moveDown() {
+        if ((y + size) < 254) {			//same functionality as above, except for the fact that now it checks for the bottom line of square (y + size)
+		if ((y + size)=236){		//if bottom line of square touches the boundry, ends the game
+
+		do Output.moveCursor(0,0); 
+		do Output.printString("GAME OVER");
+        do Output.println();
+		do Sys.halt();
+		}
+	    
+            do Screen.setColor(false);		//deletes current square
+			
+            do Screen.drawRectangle(x, y, x + size, y + size);
+			
+            let y = y + 1;			//adds 1 to current y of square
+            do Screen.setColor(true);			//creates a new square on new value of y ( one step downwards)
+            do Screen.drawRectangle(x, y , x + size, y + size);
+			if (scndshape){
+		do Screen.setColor(~(scndshape));
+		do Screen.drawCircle(((x+x+size)/2),((y+y+size)/2),10);
+		}
+		if (~(scndshape)){
+		do Screen.setColor(scndshape);
+		do Screen.drawRectangle((x+10),(y+5),(x+size-10),(((y+y+size)/2)+10));
+		}
+			
+			
+        }
+        return;
+    }
+
+    /** Moves left by 1 pixels. */
+    method void moveLeft() {
+        if (x > 1) {		//if x is greater than 1, moveleft is valid
+	if (x=2){				// if x gets too close to boundry, exit the game
+
+		do Output.moveCursor(0,55);
+		do Output.printString("GAME OVER");
+        do Output.println();
+		do Sys.halt();
+		}
+            do Screen.setColor(false);		//deletes current square
+            do Screen.drawRectangle(x , y, x + size, y + size);
+            let x = x - 1;					//reduces x by 1 ( move left )
+            do Screen.setColor(true);		//recreates a square on this new x
+            do Screen.drawRectangle(x, y, x + size, y + size);
+			if (scndshape){
+		do Screen.setColor(~(scndshape));
+		do Screen.drawCircle(((x+x+size)/2),((y+y+size)/2),10);
+		}
+		if (~(scndshape)){
+		do Screen.setColor(scndshape);
+		do Screen.drawRectangle((x+10),(y+5),(x+size-10),(((y+y+size)/2)+10));
+		}
+        }
+        return;
+    }
+
+    /** Moves right by 1 pixels. */
+    method void moveRight() {
+        if ((x + size) < 510) {			//check the left line of the square
+	if ((x + size)=508){			//if left line hits the boundry, exits the game
+	
+		do Output.moveCursor(0,0);
+		do Output.printString("GAME OVER");
+        do Output.println();
+		do Sys.halt();
+		}
+            do Screen.setColor(false);
+            do Screen.drawRectangle(x, y, x + size, y + size);		//deletes current square
+            let x = x + 1;				//adds 1 to current x
+            do Screen.setColor(true);	//creates new square on this new x value
+            do Screen.drawRectangle(x , y, x + size, y + size);
+			if (scndshape){
+		do Screen.setColor(~(scndshape));
+		do Screen.drawCircle(((x+x+size)/2),((y+y+size)/2),10);
+		}
+		if (~(scndshape)){
+		do Screen.setColor(scndshape);
+		do Screen.drawRectangle((x+10),(y+5),(x+size-10),(((y+y+size)/2)+10));
+		}
+        }
+        return;
+    }
+	
+}

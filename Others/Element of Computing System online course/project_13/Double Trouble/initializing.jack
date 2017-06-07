@@ -1,0 +1,104 @@
+
+class initializing{
+	
+	function void initializing (){
+		do local.instructions();				//triggers the instructions function
+	
+		return;
+	}
+	
+/** This function is made to echo instructions at the beginning of the game */
+function void instructions(){
+	var Square square;
+	var Square square2;
+	var food2 ff2;
+	var foodbeed food;
+	var int y,x;
+	var int key;
+	
+	let y = 1;
+	while (y<12){
+		do Output.moveCursor(y,24);
+		do Output.printString("DOUBLE TROUBLE");
+		do Output.println();
+		do Sys.wait(90);
+		let y = y + 2;
+	}
+	let y = 1;
+	while (y<11){							//displays game name from top to bottom lines
+		do Output.moveCursor(y,38);
+		let x = 14;
+		while (x>0){
+			
+			do Output.backSpace();
+			let x = x - 1;
+		}
+		
+		do Sys.wait(90);
+		let y = y + 2;
+	}
+	while (key=0){								//causes the game name to flash
+		let key = Keyboard.keyPressed();
+		let x = 14;
+		while (x>0){
+			let key = Keyboard.keyPressed();
+			do Output.backSpace();
+			let x = x - 1;
+		}
+		do Sys.wait(100);
+		do Output.moveCursor(11,24);
+		let key = Keyboard.keyPressed();
+		do Output.printString("DOUBLE TROUBLE");
+		do Sys.wait(100);
+		let key = Keyboard.keyPressed();
+	
+	}
+	
+	do Screen.clearScreen();
+	do Output.moveCursor(0,0);				//movecursor resets the location of the text to top left point of screen
+	do Output.printString("You need both hands to play this game");
+	do Sys.wait(3000);					//waits before producing next instruction
+	do Output.moveCursor(0,0);
+	do Output.printString("Eat the 'Rectangle food' with 'Rectangle' square");
+	let square2 = Square.new(50,50,30,false);		//produces dummy square2 for sake of instructions
+	let ff2 = food2.new(120,55,6,25);			//produces dummy food2 for sake of instructions
+	do Sys.wait(3000);				//waits before producing next instruction
+	do Screen.clearScreen();
+	do Output.moveCursor(0,0);
+	do Output.printString("Eat the 'Circle food' with 'Circle' square");
+	let square = Square.new(412, 50, 30,true);		//produces dummy square for sake of instructions
+	let food = foodbeed.new(360,73,5);				//produces dummy square for sake of instructions
+	do Sys.wait(3000);				//waits before producing next instruction
+	do Screen.clearScreen();
+	do Output.moveCursor(0,0);
+	do Output.printString("Collision with walls or other Square may cause the game to end");
+	let square2 = Square.new(50,50,30,false);
+	let square = Square.new(412, 50, 30,true);
+	do Sys.wait(3000);
+	do Screen.clearScreen();
+	do Output.moveCursor(0,0);
+	do Output.printString("Press any key to start");
+	let square2 = Square.new(50,50,30,false);
+	let square = Square.new(412, 50, 30,true);
+	do Output.moveCursor(9,8);
+		do Output.printString("W");						//echoes the controls on the screen
+		do Output.moveCursor(11,5);
+		do Output.printString("A ");
+		do Output.moveCursor(11,8);
+		do Output.printString("S ");
+		do Output.moveCursor(11,11);
+		do Output.printString("D ");
+		do Output.moveCursor(9,53);
+		do Output.printString("UP");
+		do Output.moveCursor(11,46);
+		do Output.printString("LEFT");
+		do Output.moveCursor(11,51);
+		do Output.printString("DOWN");
+		do Output.moveCursor(11,56);
+		do Output.printString("RIGHT");
+		
+	
+	
+	return;
+	}
+}

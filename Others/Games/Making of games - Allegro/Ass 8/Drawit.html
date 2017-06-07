@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Draw it!</title>
+</head>
+<body>
+<canvas id="myCanvas" width="800" height="600" style="background-color:rgb(0,0,0);"></canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "rgb(255,255,255)";
+ctx.fillRect(470,298,-213,-103);
+ctx.fillStyle = "rgb(255,255,255)";
+ctx.fillRect(225,142,1,1);
+ctx.beginPath();
+ctx.arc(257,106,35,0,2*Math.PI);
+ctx.fillStyle = "rgb(0,202,252)";
+ctx.fill();
+ctx.strokeStyle = "rgb(0,202,252)";
+ctx.stroke();
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1457896235 source:c:\users\tabish\desktop\testtemplate\list.cpp
+	<iostream>
+
+1457896129 source:c:\users\tabish\desktop\testtemplate\main.cpp
+	"list.cpp"
+	<iostream>
+
+1457896235 c:\users\tabish\desktop\testtemplate\list.cpp
+	<iostream>
+
+1458070049 source:c:\users\tabish\db\dropbox\oop\ass 7\list.cpp
+	<iostream>
+
+1458070560 source:c:\users\tabish\db\dropbox\oop\ass 7\main.cpp
+	"list.cpp"
+	"Circular.cpp"
+	<iostream>
+
+1458070049 c:\users\tabish\db\dropbox\oop\ass 7\list.cpp
+	<iostream>
+
+1458070490 source:c:\users\tabish\db\dropbox\oop\ass 7\circular.cpp
+	<iostream>
+
+1458070490 c:\users\tabish\db\dropbox\oop\ass 7\circular.cpp
+	<iostream>
+
+1458069404 c:\users\tabish\db\dropbox\oop\ass 7\circular.h
+	<iostream>
+	"Circular.cpp"
+

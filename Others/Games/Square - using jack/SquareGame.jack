@@ -1,0 +1,523 @@
+
+class SquareGame {
+
+    // The square
+    field Square square;
+	field Square square2;
+	field food2 ff2;
+	field int foodX, foodY;
+	
+	field Collision collision;
+	field int level;
+	
+	field int savex;
+	field int savey;
+	field foodbeed food;
+	field int xof,yof;
+	static int seed;
+	static int score;
+	
+    // The square's movement direction
+    field int direction; // 0=none,1=up,2=down,3=left,4=right
+	field int direction2;
+	
+    /** Constructs a new Square Game. */
+    constructor SquareGame new() {
+		var int key;
+		do initializing.instructions();		//output instructions
+		
+		//waits for the key to be pressed before starting the game
+		while (key=0){
+		
+		let key = Keyboard.keyPressed();
+		let direction = 2;
+		let direction2 = 2;
+		}
+		
+		do Screen.clearScreen();
+		do Output.moveCursor(0,0);
+        let square = Square.new(412, 50, 30,true);		//constructs square 1
+		let square2 = Square.new(50,50,30,false);		//constructs square 2
+		let foodX = 232;								//initialize location for food (circle)
+		let foodY = 90;
+		let score = 0;
+		let level = 1;
+        let food = foodbeed.new(foodX,foodY,5);			//draws a food (circle)
+		do Output.moveCursor(0,0);
+		let ff2 = food2.new(229,120,6,25);				//draws a food(rectangle)
+		
+		
+		
+		do Screen.setColor(true);
+        do Screen.drawLine(0,236 ,511 , 236);			//draws a status line
+
+		do Output.moveCursor(22,1);						//draws a score panel
+		do Output.printString("Score : ");
+		do Output.printString("0");
+		do Output.moveCursor(22,55);
+		do Output.printString("Level : ");				//draws a level panel
+		do Output.printString("1");
+		do Output.moveCursor(22,10);
+		
+		return this;
+		
+    }
+
+    /** Deallocates the object's memory. */
+    method void dispose() {
+        do square.dispose();
+        do Memory.deAlloc(this);
+        return;
+    }
+	
+    /** checks if the circle food has been eaten.*/
+	method boolean eatfood(){
+	
+	var int yos1,ss1,fs2;
+	var int xos1;
+	let xos1 = square.xcoordinates();		//gets square 1 x 
+	
+	let yos1 = square.ycoordinates();		//gets square 1 y
+	
+	let fs2 = 5;							//radius of food circle
+	if (((food.hasEaten(xos1,yos1,ss1,fs2))=true)){
+		let score  = score + 1;			//if food has been eaten, score ++
+		
+		if (score < 1){
+		do Output.backSpace();			//specifies how to print score on screen. if score was 0 or negative number, double backspace to deal with negative sign
+		do Output.backSpace();
+		}
+		else{
+		
+		do Output.backSpace();			//else single backspace
+		}
+		if (score = 3){				
+		let level = level + 1;			//increase level on every 3rd score
+		do Output.moveCursor(22,63);	//manipulates the screen location to print current level 
+		do Output.printInt(level);
+		do Output.moveCursor(22,9);
+		let score = 0;					//as the level is increased, reset the score counter to 0
+		}
+				
+		do Output.printInt(score);		//output score
+
+		return true;	
+	}
+	//checks if the food for square 1 is eaten by square 2
+	if (eatfoodby2()=true){
+		
+		let score = score - 1;		//if true, reduce score by 1
+		
+		if (score <-1){				//if score is lesser then -1, double backspace to deal with negative sign
+		do Output.backSpace();
+		do Output.backSpace();
+		}
+		else{						//else single backspace
+		do Output.backSpace();
+		}
+		if (score = -3){		
+		let level = level - 1;		//reduce 1 level when score gets -3
+		do Output.moveCursor(22,63);
+		do Output.printInt(level);
+		do Output.moveCursor(22,9);
+		let score = 0;
+		}
+		do Output.printInt(score);
+		return true;
+	}
+	return false;
+	}
+	
+	method boolean eatsquarefood(){
+	
+	var int yos2,ss2;
+	var int xos2;
+	let xos2 = square2.xcoordinates();
+	
+	let yos2 = square2.ycoordinates();
+	//checks if the food 2 has been eaten by square 2
+	if (((ff2.hasEaten(xos2,yos2,30))=true)){
+		
+		let score  = score + 1;		//if true, score ++
+		
+		if (score < 1){
+		do Output.backSpace();
+		do Output.backSpace();			//same as above(square 1 eatfood logic)
+		}
+		else{
+		do Output.backSpace();
+		}	
+		if (score = 3){
+		let level = level + 1;
+		
+		do Output.moveCursor(22,63);
+		do Output.printInt(level);
+		do Output.moveCursor(22,9);
+		let score = 0;
+		}
+		do Output.printInt(score);
+		return true;	
+	}
+	//checks if the food 2 is eaten by square 1
+	if ((eatfoodby1())=true){
+		let score  = score - 1 ;		//if true, reduce the score by 1
+		
+		if (score <-1){				//same as above (square 1 eatfood logic)
+		do Output.backSpace();
+		do Output.backSpace();
+		}
+		else{
+		do Output.backSpace();
+		}
+		if (score = -3){
+		let level = level - 1;
+		do Output.moveCursor(22,63);
+		do Output.printInt(level);
+		do Output.moveCursor(22,9);
+		let score = 0;
+		}
+		do Output.printInt(score);
+		return true;
+	}
+	return false;
+	}
+	
+	/** a check to see if food 2 is eaten by 1 */
+	method boolean eatfoodby1(){
+	
+	var int yos1,ss1,fs2;
+	var int xos1;
+	let xos1 = square.xcoordinates();
+	
+	let yos1 = square.ycoordinates();
+	
+	
+	if (((ff2.hasEaten(xos1,yos1,ss1))=true)){
+		
+	//simply using a function to check if the food has been eaten, but instead of orignal square's coordinates, other square's coordinates used	
+		return true;	
+	}
+	return false;
+	}
+	
+	method boolean eatfoodby2(){
+	
+	var int yos2,ss1,fs2;
+	var int xos2;
+	let xos2 = square2.xcoordinates();
+	
+	let yos2 = square2.ycoordinates();
+	
+	let fs2 = 5;
+	if (((food.hasEaten(xos2,yos2,ss1,fs2))=true)){
+		
+	//simply using a function to check if the food has been eaten, but instead of orignal square's coordinates, other square's coordinates used	
+		return true;	
+	}
+	return false;
+	}
+	
+	/** makes food on the screen */
+	method void makefood(){
+	
+	do Random.setSeed(seed);
+	let foodX= Random.randRange(500);			//returns random value of foodX in range 500
+	let foodY=Random.randRange(230);			// return random value of foodY in range 230
+	do checkfoodinsquare();						//checks if the foodX and foodY lies inside the squares
+	if ((foodX>ff2.xc()) & (foodX<((ff2.xc())+6))){
+		if ((foodY>ff2.yc()) & (foodY<((ff2.yc())+25))){
+		do makefood();				//prevents the spawning of the circle food inside the rectangle food ( needs improving )
+		}
+	}
+	do food.shiftbeed(foodX,foodY);		//calls a function to generate circlefood with points foodX and foodY
+	
+	
+	return;
+	}
+	
+	method void makefoodfor2(){
+	
+	do Random.setSeed(seed);
+	let foodX= Random.randRange(500);	//returns random value of foodX in range 500
+	let foodY=Random.randRange(210);	// return random value of foodY in range 210
+	do checkfood2insquare();			//checks if the foodX and foodY lies inside the squares
+	if ((foodX>food.xc()) & (foodX<((food.xc())+10))){
+		if ((foodY>food.yc()) & (foodY<((food.yc())+10))){
+		do makefoodfor2();	//prevents the spawning of the rectangle food inside the circle food ( needs improving )
+		}
+	}
+	do ff2.shiftfood(foodX,foodY);	//calls a function to generate rectanglefood with points foodX and foodY
+	
+	
+	return;
+	}
+	
+	/** function made to prevent the spawning of food 1 in squares */
+	method void checkfoodinsquare(){
+	
+	//if generated X coordinate lies in the range of x to x+size of square coordinate, regenerate x coordinate
+	if ((foodX+10)> square.xcoordinates()){	
+		if ((foodX-10)< (square.xcoordinates() + 30)){
+			let foodX =Random.randRange(500);
+			do checkfoodinsquare();
+			
+		}
+	}
+	//if generated Y coordinate lies in the range of y to y+size of square coordinate, regenerate y coordinate
+	else{
+	if (foodY> square.ycoordinates()){
+		if (foodY< (square.ycoordinates() + 30)){
+			let foodY =Random.randRange(240);
+			
+		}
+	}
+	}
+	//if generated X coordinate lies in the range of x to x+size of square 2 coordinate, regenerate x coordinate
+	if ((foodX+10)> square2.xcoordinates()){
+		if ((foodX-10)< (square2.xcoordinates() + 30)){
+			let foodX =Random.randRange(500);
+			do checkfoodinsquare();
+			
+		}
+	}
+	//if generated Y coordinate lies in the range of y to y+size of square 2 coordinate, regenerate y coordinate
+	else{
+	if (foodY> square2.ycoordinates()){
+		if (foodY< (square2.ycoordinates() + 30)){
+			let foodY =Random.randRange(240);
+			
+		}
+	}
+	}
+	return;
+	
+	}
+	/**function made to prevent spawning of food 2 in squares */
+	method void checkfood2insquare(){
+	// ALL THE LOGICS IMPLEMENTED IS SAME AS ABOVE
+	if (foodX> square.xcoordinates()){
+		if (foodX< (square.xcoordinates() + 30)){
+			let foodX =Random.randRange(500);
+			do checkfoodinsquare();
+			
+		}
+	}
+	else{
+	if (foodY> square.ycoordinates()){
+		if (foodY< (square.ycoordinates() + 30)){
+			let foodY =Random.randRange(210);
+			
+		}
+	}
+	}
+	if (foodX> square2.xcoordinates()){
+		if (foodX< (square2.xcoordinates() + 30)){
+			let foodX =Random.randRange(500);
+			do checkfoodinsquare();
+			
+		}
+	}
+	else{
+	if (foodY> square2.ycoordinates()){
+		if (foodY< (square2.ycoordinates() + 30)){
+			let foodY =Random.randRange(210);
+			
+		}
+	}
+	}
+	return;
+	
+	}
+	/** Checks if both squares are colliding */
+	method boolean squaretosquarecollision(){
+	
+	if (Collision.collide(square.xcoordinates(),square.ycoordinates(),square2.xcoordinates(),square2.ycoordinates())=true){
+		do Output.moveCursor(0,0);
+		do Output.printString("GAME OVER");
+		do Sys.halt();		//stops the game if the square collides
+		
+	}
+	return false;
+	}
+	
+    /** Starts the game. Handles inputs from the user that control
+     *  the square's movement and direction. */
+    method void run() {
+        var char key;
+		var char key2;
+        var boolean exit;
+
+        let exit = false;
+		
+		//while the games doesnt exit, the loops keeps on going
+        while (~exit) {
+            // waits for a key to be pressed.
+            while (key = 0) {
+					let key = Keyboard.keyPressed();
+					
+					//on everyloop, checks if the food has been eaten
+					if (eatfood()=true){
+					
+
+					//if food has been eaten, make food for the square on new location
+					do makefood();
+					
+					//on every loop, checks if the squares are colliding
+					if (squaretosquarecollision()=false){
+					
+					//moves the square if squares arent colliding
+					do moveSquare();
+					}
+					}
+					
+					//checks on every loop if food 2 is eaten
+					if (eatsquarefood()=true){
+					
+					//if true, make food2 on new location on screen
+					do makefoodfor2();
+					
+					// move the square as the loop increases
+					do moveSquare();
+					}
+					
+					//increase a variable seed on everyloop by 10
+					let seed = seed + 10;
+					if( seed = 32767 ) {
+					let seed = 0;		//if seed reaches 32767, reset it to 0
+					}
+					if (squaretosquarecollision()=false){
+					
+					//if squares arent colliding, move the squares
+					do moveSquare();
+					}
+					
+					
+					
+				
+					
+				
+					
+					
+				
+                
+            }
+
+            if (key = 81) {
+                let exit = true;	//if keypressed was q, exit the game
+            }
+           
+            if (key = 131) {
+                let direction = 1;		//if keypress was up, set direction 1
+            }
+            if (key = 133) {
+                let direction = 2;		//if keypress was down, set direction 2
+            }
+            if (key = 130) {
+                let direction = 3;		//if keypress was left, set direction 3
+            }
+            if (key = 132) {
+                let direction = 4;		//if keypress was right, set direction 4
+            }
+			if (key = 87) {
+                let direction2 = 1;		//if keypress was w, set direction of square 2 to  1
+            }
+            if (key = 83) {
+                let direction2 = 2;		//if keypress was s, set direction of square 2 to  2
+            }
+            if (key = 65) {
+                let direction2 = 3;		//if keypress was a, set direction of square 2 to  3
+            }
+            if (key = 68) {
+                let direction2 = 4;		//if keypress was d, set direction of square 2 to  4
+            }
+
+            
+				let key = Keyboard.keyPressed();		//checks the next keypress
+				
+				
+					if (eatfood()=true){
+					
+				
+					//if food has been eaten, produce food on new location of screen
+					do makefood();
+					if (squaretosquarecollision()=false){
+					
+					//if not collision of both the squares, move square
+					do moveSquare();
+					}
+					
+					}
+					if (eatsquarefood()=true){
+					
+					//if food2 has been eaten, reproduce food2 on new location of screen
+					do makefoodfor2();
+					if (squaretosquarecollision()=false){
+					
+					//if not collision of both the squares, move square
+					do moveSquare();
+					}
+					}
+					
+					
+					
+					if (eatfood()=false){
+						if (eatsquarefood()=false){
+				
+					if (squaretosquarecollision()=false){
+					
+					//keep moving the square if food hasnt been eaten and collision didnt occur. 
+					do moveSquare();
+					}
+					}
+					}
+					
+					
+                
+				
+            
+			
+        }
+        
+        return;
+	}
+
+    /** Moves the square by 1 pixels in the current direction. */
+    method void moveSquare() {
+	
+		//depending upon the direction, the respective movement function from square class is called
+        if (direction = 1) {
+            do square.moveUp();
+        }
+        if (direction = 2) {
+            do square.moveDown();
+        }
+        if (direction = 3) {
+            do square.moveLeft();
+        }
+        if (direction = 4) {
+            do square.moveRight();
+        }
+		//direction2 triggers the movement of square 2
+		if (direction2 = 1) {
+            do square2.moveUp();
+        }
+        if (direction2 = 2) {
+            do square2.moveDown();
+        }
+        if (direction2 = 3) {
+            do square2.moveLeft();
+        }
+        if (direction2 = 4) {
+            do square2.moveRight();
+        }
+		
+		if (level = 0){
+		do Output.moveCursor(0,0);
+		do Output.printString("GAME OVER");
+		do Sys.halt();
+		}
+        do Sys.wait(40/level); // Delays the next movement by factor of current level.
+        return;
+    }
+	
+}

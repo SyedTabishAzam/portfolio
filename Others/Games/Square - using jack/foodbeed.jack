@@ -1,0 +1,268 @@
+class foodbeed{
+static int xf,yf,tempx,tempy;
+field int rad;
+field boolean flag;
+
+/** Constructs new circle food for square 1 */
+constructor foodbeed new(int Cx, int Cy, int Cr){ 
+        let xf = Cx;
+        let yf = Cy;
+        let rad = Cr;
+		let tempx = Cx;
+		let tempy = Cy;
+        do draw();
+        return this;
+		
+    }
+	
+method void draw() {
+		
+        do Screen.setColor(true);
+        do Screen.drawCircle(xf,yf,rad);
+		
+		
+        return;
+    }
+	
+/** shifts the circle food to new location */
+method void shiftbeed(int newx,int newy){
+
+do Screen.setColor(false);			//deletes the current circle
+do Screen.drawCircle(xf,yf,rad);
+let xf = newx;						//saves newx and newy to xf and yf
+let yf = newy;
+let tempx = newx;					//saves received x and y value to temp variables
+let tempy = newy;
+do Screen.setColor(true);			//draws the circle on these new x and y
+do Screen.drawCircle(xf,yf,rad);
+
+return;
+}
+
+/** checks if the circle food has been eaten by square */
+method boolean hasEaten(int x1,int y1,int sss1,int ffs2){
+
+//right left top bottom refers to walls of square
+if (checkright(x1,y1,sss1,ffs2)=false){
+	if (checkleft(x1,y1,sss1,ffs2)=false){
+		if (checktop(x1,y1,sss1,ffs2)=false){
+			if (checkbottom(x1,y1,sss1,ffs2)=false){
+			return false;		//returns false if no collision occurs
+			}
+		}
+	}	
+}
+return true;
+}
+
+method boolean checkright(int x1,int y1,int sss1,int ffs2){
+					var int dum2;
+					var int dum;
+					var int dum3;
+					
+					let dum = y1;			// saves y coordinates of square in dummy variable
+					let dum2 = tempy;		//saves x and y coordinaes of circle in dummy variable
+					let dum3 = tempx;
+					let sss1 = 30;			//since the radius of square is constant
+					if (((x1+sss1)=(tempx-10))){		//checks if the right wall of square crosses the left most point axis of square
+						while (y1<(dum+sss1+1)){		// checks for every value of y of square from top to bottom
+						let y1 = y1 + 1	;	
+					
+						
+							if (y1=tempy){						//if y of square equals y of circle, return true
+								return true;
+							}
+						}	
+						let y1 = dum;	
+					}	
+					if (((x1+sss1)=(tempx))){		//checks if the right wall of square crosses the middle most point axis of square
+							while (y1<(dum+sss1+1)){		//for everyvalue of y of square from top to bottom
+								let y1 = y1 + 1	;
+								if ((y1=(tempy-10))){			//if y of square equals the top most point of circle, return true ( right wall hits the top)
+								
+									return true;
+								}
+							
+								if ((y1=(tempy+10))){		//if y of square equals the bottom most point of circle, return true ( right wall hits the bottom)
+								
+									return true;
+								}
+							}
+					
+					let y1=dum;
+					}
+				
+	return false;
+	
+
+}
+
+method boolean checkleft(int x1,int y1,int sss1,int ffs2){
+					var int dum2;
+					var int dum;
+					var int dum3;
+					
+					//saving variables in dummy
+					let dum = y1;
+					let dum2 = yf;
+					let dum3 = xf;
+					let sss1 = 30;
+					
+					if (((x1)=(dum3+10))){				//checks if left wall of square is on x axis of the circle
+						while (y1<(dum+sss1+1)){		//checks for every y from top to bottom
+							let y1 = y1 + 1	;	
+					
+						
+							if (y1=yf){					//if both y are equal ,return true
+							
+							
+							
+									
+							return true;
+								
+							}
+						}
+						let y1 = dum;	
+						}
+					if (x1=dum3){					//checks if the square x coordinate is on the origin x axis of circle food
+						while (y1<(dum+sss1+1)){		//checks for every square y from top to bottom
+							let y1 = y1 + 1	;
+							if ((y1=(dum2-10))){		//if square y equals the top most y of circle ,return true ( left wall hits the top point of circle)
+					
+							
+							
+									
+									return true;
+								}
+							
+							if ((y1=(dum2+10))){		//if square y equals the bottom most y of circle ,return true ( left wall hits the bottom point of circle)
+							
+							
+									
+							return true;
+							}
+						}
+					
+					
+					let y1=dum;
+					}
+				
+	return false;
+	
+
+}
+
+method boolean checktop(int x1,int y1,int sss1,int ffs2){
+					var int dum2;
+					var int dum;
+					var int dum3;
+					
+					
+					//save values in dummy
+					let dum = x1;
+					let dum2 = xf;
+					let dum3 = yf;
+					let sss1 = 30;
+					if (((y1)=(dum3+10))){			//if top y of square hits the bottom of circle
+						while (x1<(dum+sss1+1)){				// for every x from left to right (of square )
+							let x1 = x1 + 1	;	
+					
+						
+							if (x1=xf){			//if x of square equals to x of circle return true
+							
+							
+							
+								
+									return true;
+								}
+								
+							}
+						let x1 = dum;
+					}
+					if (((y1)=(dum3))){				//if square's y coordinate reaches y coordinate of circle
+						while (x1<(dum+sss1+1)){		//for each x from left to right of square
+							let x1 = x1 + 1	;
+						if (x1=(dum2-10)){				//if x coordinate of square equals the left most point of circle (top wall hits the left point)
+							
+							
+								
+									return true;			//return true
+						}
+						
+						if ((x1=(dum2+10))){		//if x coordinate of square equals the right most point of circle (top wall hits the right point)
+							
+							
+								
+									return true;
+								
+						}
+						}
+					let x1=dum;
+					}
+				
+	return false;
+	
+
+}
+
+method boolean checkbottom(int x1,int y1,int sss1,int ffs2){
+					var int dum2;
+					var int dum;
+					var int dum3;
+					
+					let dum = x1;
+					let dum2 = xf;
+					let dum3 = yf;
+					let sss1 = 30;
+					if (((y1+sss1)=(dum3-10))){				//if bottom wall y coordinate of square equals the top point y coordinate of circle
+							while (x1<(dum+sss1+1)){			//for each x from left to right ( of square )
+								let x1 = x1 + 1	;	
+					
+						
+							if (x1=xf){					//if both x gets equal, return true
+							
+							
+							
+								
+									return true;
+								}
+							}
+						let x1 = dum;
+					}
+					if (((y1+sss1)=(dum3))){			//if bottom wall y axis equal the origin y axis of circle
+						while (x1<(dum+sss1+1)){			//for every x from left to right  ( of square )
+							let x1 = x1 + 1	;
+								if ((x1=(dum2-10))){		//if bottom square wall hits the left most point of circle, return true
+							
+							
+								
+									return true;
+								}
+								if ((x1=(dum2+10))){	//if bottom square wall hits the right most point of circle, return true
+							
+							
+								
+									return true;
+								}
+						
+						}
+						
+					
+					
+					let x1=dum;
+					}
+				
+	return false;
+	
+
+}
+
+method int xc(){
+return xf;		//returns circle x coordinates
+}	
+
+method int yc(){
+return yf;		//returns circle y coordinates
+}
+	
+}

@@ -1,0 +1,533 @@
+function foodbeed.new 0
+push constant 2
+call Memory.alloc 1
+pop pointer 0
+push argument 0
+pop static 0
+push argument 1
+pop static 1
+push argument 2
+pop this 0
+push argument 0
+pop static 2
+push argument 1
+pop static 3
+push pointer 0
+call foodbeed.draw 1
+pop temp 0
+push pointer 0
+return
+function foodbeed.draw 0
+push argument 0
+pop pointer 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 0
+push static 1
+push this 0
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+return
+function foodbeed.shiftbeed 0
+push argument 0
+pop pointer 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push static 0
+push static 1
+push this 0
+call Screen.drawCircle 3
+pop temp 0
+push argument 1
+pop static 0
+push argument 2
+pop static 1
+push argument 1
+pop static 2
+push argument 2
+pop static 3
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 0
+push static 1
+push this 0
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+return
+function foodbeed.hasEaten 0
+push argument 0
+pop pointer 0
+push pointer 0
+push argument 1
+push argument 2
+push argument 3
+push argument 4
+call foodbeed.checkright 5
+push constant 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push pointer 0
+push argument 1
+push argument 2
+push argument 3
+push argument 4
+call foodbeed.checkleft 5
+push constant 0
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push pointer 0
+push argument 1
+push argument 2
+push argument 3
+push argument 4
+call foodbeed.checktop 5
+push constant 0
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push pointer 0
+push argument 1
+push argument 2
+push argument 3
+push argument 4
+call foodbeed.checkbottom 5
+push constant 0
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 0
+return
+label IF_FALSE3
+label IF_FALSE2
+label IF_FALSE1
+label IF_FALSE0
+push constant 0
+not
+return
+function foodbeed.checkright 3
+push argument 0
+pop pointer 0
+push argument 2
+pop local 1
+push static 3
+pop local 0
+push static 2
+pop local 2
+push constant 30
+pop argument 3
+push argument 1
+push argument 3
+add
+push static 2
+push constant 10
+sub
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+label WHILE_EXP0
+push argument 2
+push local 1
+push argument 3
+add
+push constant 1
+add
+lt
+not
+if-goto WHILE_END0
+push argument 2
+push constant 1
+add
+pop argument 2
+push argument 2
+push static 3
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 0
+not
+return
+label IF_FALSE1
+goto WHILE_EXP0
+label WHILE_END0
+push local 1
+pop argument 2
+label IF_FALSE0
+push argument 1
+push argument 3
+add
+push static 2
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+label WHILE_EXP1
+push argument 2
+push local 1
+push argument 3
+add
+push constant 1
+add
+lt
+not
+if-goto WHILE_END1
+push argument 2
+push constant 1
+add
+pop argument 2
+push argument 2
+push static 3
+push constant 10
+sub
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 0
+not
+return
+label IF_FALSE3
+push argument 2
+push static 3
+push constant 10
+add
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 0
+not
+return
+label IF_FALSE4
+goto WHILE_EXP1
+label WHILE_END1
+push local 1
+pop argument 2
+label IF_FALSE2
+push constant 0
+return
+function foodbeed.checkleft 3
+push argument 0
+pop pointer 0
+push argument 2
+pop local 1
+push static 1
+pop local 0
+push static 0
+pop local 2
+push constant 30
+pop argument 3
+push argument 1
+push local 2
+push constant 10
+add
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+label WHILE_EXP0
+push argument 2
+push local 1
+push argument 3
+add
+push constant 1
+add
+lt
+not
+if-goto WHILE_END0
+push argument 2
+push constant 1
+add
+pop argument 2
+push argument 2
+push static 1
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 0
+not
+return
+label IF_FALSE1
+goto WHILE_EXP0
+label WHILE_END0
+push local 1
+pop argument 2
+label IF_FALSE0
+push argument 1
+push local 2
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+label WHILE_EXP1
+push argument 2
+push local 1
+push argument 3
+add
+push constant 1
+add
+lt
+not
+if-goto WHILE_END1
+push argument 2
+push constant 1
+add
+pop argument 2
+push argument 2
+push local 0
+push constant 10
+sub
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 0
+not
+return
+label IF_FALSE3
+push argument 2
+push local 0
+push constant 10
+add
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 0
+not
+return
+label IF_FALSE4
+goto WHILE_EXP1
+label WHILE_END1
+push local 1
+pop argument 2
+label IF_FALSE2
+push constant 0
+return
+function foodbeed.checktop 3
+push argument 0
+pop pointer 0
+push argument 1
+pop local 1
+push static 0
+pop local 0
+push static 1
+pop local 2
+push constant 30
+pop argument 3
+push argument 2
+push local 2
+push constant 10
+add
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+label WHILE_EXP0
+push argument 1
+push local 1
+push argument 3
+add
+push constant 1
+add
+lt
+not
+if-goto WHILE_END0
+push argument 1
+push constant 1
+add
+pop argument 1
+push argument 1
+push static 0
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 0
+not
+return
+label IF_FALSE1
+goto WHILE_EXP0
+label WHILE_END0
+push local 1
+pop argument 1
+label IF_FALSE0
+push argument 2
+push local 2
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+label WHILE_EXP1
+push argument 1
+push local 1
+push argument 3
+add
+push constant 1
+add
+lt
+not
+if-goto WHILE_END1
+push argument 1
+push constant 1
+add
+pop argument 1
+push argument 1
+push local 0
+push constant 10
+sub
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 0
+not
+return
+label IF_FALSE3
+push argument 1
+push local 0
+push constant 10
+add
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 0
+not
+return
+label IF_FALSE4
+goto WHILE_EXP1
+label WHILE_END1
+push local 1
+pop argument 1
+label IF_FALSE2
+push constant 0
+return
+function foodbeed.checkbottom 3
+push argument 0
+pop pointer 0
+push argument 1
+pop local 1
+push static 0
+pop local 0
+push static 1
+pop local 2
+push constant 30
+pop argument 3
+push argument 2
+push argument 3
+add
+push local 2
+push constant 10
+sub
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+label WHILE_EXP0
+push argument 1
+push local 1
+push argument 3
+add
+push constant 1
+add
+lt
+not
+if-goto WHILE_END0
+push argument 1
+push constant 1
+add
+pop argument 1
+push argument 1
+push static 0
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 0
+not
+return
+label IF_FALSE1
+goto WHILE_EXP0
+label WHILE_END0
+push local 1
+pop argument 1
+label IF_FALSE0
+push argument 2
+push argument 3
+add
+push local 2
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+label WHILE_EXP1
+push argument 1
+push local 1
+push argument 3
+add
+push constant 1
+add
+lt
+not
+if-goto WHILE_END1
+push argument 1
+push constant 1
+add
+pop argument 1
+push argument 1
+push local 0
+push constant 10
+sub
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 0
+not
+return
+label IF_FALSE3
+push argument 1
+push local 0
+push constant 10
+add
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 0
+not
+return
+label IF_FALSE4
+goto WHILE_EXP1
+label WHILE_END1
+push local 1
+pop argument 1
+label IF_FALSE2
+push constant 0
+return
+function foodbeed.xc 0
+push argument 0
+pop pointer 0
+push static 0
+return
+function foodbeed.yc 0
+push argument 0
+pop pointer 0
+push static 1
+return

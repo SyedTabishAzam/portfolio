@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="allegro" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/allegro" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../../../../allegro-4.4.2-mingw-4.5.2/include" />
+				</Compiler>
+				<Linker>
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-monolith-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-monolith-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-monolith-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-monolith-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-monolith-static-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-monolith-static-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-monolith-static-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-monolith-static-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-static-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-static-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-static-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegro-4.4.2-static-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegrogl-0.4.4-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegrogl-0.4.4-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegrogl-0.4.4-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegrogl-0.4.4-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegrogl-0.4.4-static-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegrogl-0.4.4-static-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegrogl-0.4.4-static-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liballegrogl-0.4.4-static-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libjpgalleg-2.6-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libjpgalleg-2.6-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libjpgalleg-2.6-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libjpgalleg-2.6-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libjpgalleg-2.6-static-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libjpgalleg-2.6-static-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libjpgalleg-2.6-static-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libjpgalleg-2.6-static-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libloadpng-1.5-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libloadpng-1.5-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libloadpng-1.5-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libloadpng-1.5-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libloadpng-1.5-static-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libloadpng-1.5-static-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libloadpng-1.5-static-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libloadpng-1.5-static-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liblogg-1.0-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liblogg-1.0-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liblogg-1.0-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liblogg-1.0-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liblogg-1.0-static-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liblogg-1.0-static-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liblogg-1.0-static-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/liblogg-1.0-static-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libogg-1.2.1-static-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libogg-1.2.1-static-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libogg-1.2.1-static-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libogg-1.2.1-static-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libpng-1.4.0-static-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libpng-1.4.0-static-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libpng-1.4.0-static-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libpng-1.4.0-static-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libvorbis-1.3.2-static-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libvorbis-1.3.2-static-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libvorbis-1.3.2-static-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libvorbis-1.3.2-static-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libvorbisfile-1.3.2-static-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libvorbisfile-1.3.2-static-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libvorbisfile-1.3.2-static-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libvorbisfile-1.3.2-static-mt-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libzlib-1.2.5-static-md.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libzlib-1.2.5-static-md-debug.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libzlib-1.2.5-static-mt.a" />
+					<Add library="../../../../../allegro-4.4.2-mingw-4.5.2/lib/libzlib-1.2.5-static-mt-debug.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/allegro" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Point.h" />
+		<Unit filename="Ship.cpp" />
+		<Unit filename="Ship.h" />
+		<Unit filename="Turret.cpp" />
+		<Unit filename="Turret.h" />
+		<Unit filename="allegro.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

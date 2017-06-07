@@ -1,0 +1,200 @@
+class Collision{
+	static int xs1,ys1,xs2,ys2;
+	
+	
+	/* Class made to check if the two squares collide or not */
+	function boolean collide(int x1, int y1, int x2,int y2){
+		var int xs1,ys1,xs2,ys2;
+		// takes as input the x and y coordinates of square 1 and square 2
+		let xs1 = x1;
+        let ys1 = y1;
+        let xs2 = x2;
+		let ys2 = y2;
+		
+		//Checks if the square boundry collides with other square boundry
+		//checks left,right,top and bottom lines of square one against square two
+		if (Collision.checkright(xs1,ys1,xs2,ys2)=false){		
+			if (Collision.checkleft(xs1,ys1,xs2,ys2)=false){
+				if (Collision.checktop(xs1,ys1,xs2,ys2)=false){
+					if (Collision.checkbottom(xs1,ys1,xs2,ys2)=false){
+					return false;
+					}
+				}
+			}
+		}
+						
+	
+	return true;
+	}
+
+	function boolean checkright(int x1,int y1,int x2,int y2){
+					var int dum;
+					var int dum2;
+					
+					var int dum3;
+					var int sss2;
+					
+					let dum = y1;		//saves y1,y2 and x2 in dummy variables
+					let dum2 = y2;
+					let dum3 = x2;
+					let sss2 = 30;
+					
+					if (((x1+sss2)=(x2))){		//checks if the rightline of square 1 gets equal to left line of square 2
+						
+						while (y1<(dum+sss2+1)){			//loops for every value of square 1 y from top to bottom
+							let y1 = y1 + 1	;	
+						
+							while (y2<(dum2+sss2+1)){		//loops for every value of square 2 y from top to bottom
+						
+							
+								
+								if (y1=y2){					// if both the y (Square1y,square2y) are equal, return true
+							
+								
+							
+								
+										return true;
+								
+								}
+							
+							let y2 = y2 + 1;
+							}
+						
+						let y2 = dum2;				//restores y2 value on every loop of y1
+						}
+					
+					let y1=dum;			//restore y1 value as the function ends
+					}
+				
+	return false;
+	
+
+}
+	function boolean checkleft(int x1,int y1,int x2,int y2){
+					var int dum;
+					var int dum2;
+					
+					var int dum3;
+					var int sss2;
+					
+					let dum = y1;
+					let dum2 = y2;
+					let dum3 = x2;
+					let sss2 = 30;
+					
+					if (((x1)=(x2+sss2))){			//checks if the left line of square 1 is equal to right line of square 2
+						
+						while (y1<(dum+sss2+1)){		//loops for every value of y1 from top to bottom
+							let y1 = y1 + 1	;	
+						
+							while (y2<(dum2+sss2+1)){		//loops for every value of y2 from top to bottom
+						
+							
+								
+								if (y1=y2){		//if both y are same, return true
+							
+								
+							
+								
+										return true;
+								
+								}
+							
+							let y2 = y2 + 1;
+							}
+						
+						let y2 = dum2;
+						}
+					
+					let y1=dum;
+					}
+				
+	return false;
+	
+
+}
+	function boolean checktop(int x1,int y1,int x2,int y2){
+					var int dum;
+					var int dum2;
+					
+					var int dum3;
+					var int sss2;
+					let dum = x1;
+					let dum2 = x2;
+					let dum3 = y2;
+					let sss2 = 30;
+					if (y1=(y2+sss2)){		//checks if the top wall of square is in the axis of the bottom wall of square2
+						while (x1<(dum+sss2+1)){		//checks for every x of square 1 from left to right
+							let x1 = x1 + 1	;	
+						
+							while (x2<(dum2+sss2+1)){	//checks for every x of square 2 from left to right
+							
+							
+							if ((x1=x2)){				// if x1 and x2 of both the squares are same, return true
+							
+							
+							
+								
+							
+								
+									return true;
+								
+							}
+							
+							let x2 = x2 + 1;
+							}
+						
+						let x2 = dum2;
+						}
+					
+					let x1=dum;
+					}
+				
+	return false;
+	
+
+}
+	function boolean checkbottom(int x1,int y1,int x2,int y2){
+					var int dum;
+					var int dum2;
+					
+					var int dum3;
+					var int sss2;
+					let dum = x1;
+					let dum2 = x2;
+					let dum3 = y2;
+					let sss2 = 30;
+					if ((y1+sss2)=y2){	//checks if the bottom wall of square 1 is in the axis of the top wall of square2
+						while (x1<(dum+sss2+1)){		//loops for every value of square 1 x from left to right
+							let x1 = x1 + 1	;			
+						
+							while (x2<(dum2+sss2+1)){	//loops for every value of square 2 x from left to right
+							
+							
+							if ((x1=x2)){			//if both x meets, return true
+							
+							
+							
+								
+							
+								
+									return true;
+								
+							}
+							
+							let x2 = x2 + 1;
+							}
+						
+						let x2 = dum2;
+						}
+					
+					let x1=dum;
+					}
+				
+	return false;
+	
+
+}
+}
+
+

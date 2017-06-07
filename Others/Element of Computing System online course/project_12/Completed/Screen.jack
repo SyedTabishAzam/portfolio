@@ -1,0 +1,94 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/12/Screen.jack
+
+/**
+ * Graphic screen library.
+ */
+class Screen {
+	static boolean startdraw;
+    /** Initializes the Screen. */
+    function void init() {
+	let startdraw = false;
+	return;
+    }
+
+    /** Erases the whole screen. */
+    function void clearScreen() {
+	
+	var int i; 
+	let i = 16384;
+	while (i < 24575){
+		do Memory.poke(i,false);
+	}
+	return;
+    }
+
+    /** Sets the color to be used in further draw commands
+     *  where white = false, black = true. */
+    function void setColor(boolean b) {
+    if (b){
+		let startdraw = true;
+	}
+	else{
+		let startdraw = false;
+	}
+	return;
+	}
+
+    /** Draws the (x, y) pixel. */
+    function void drawPixel(int x, int y) {
+		var int location,val;
+		let location = 16384 + (y*32) + (x/16);
+		let val = Memory.peek(location);
+		
+		if (startdraw){
+			let val = val|1;
+		
+		}
+		else{
+			let val = val &(0);
+		}
+		do Memory.poke(location,val);
+		return;
+    }
+
+    /** Draws a line from (x1, y1) to (x2, y2). */
+    function void drawLine(int x1, int y1, int x2, int y2) {
+		var int a,b,adyminusbdx;
+		let a = 0;
+		let b = 0;
+		let adyminusbdx = 0;
+		while ((~(a>(x2-x1))) & (~(b>(y2-y1)))){
+		do Screen.drawPixel(x1+a,y1+b);
+		if (adyminusbdx<0){
+			let a = a + 1;
+			let adyminusbdx = adyminusbdx + (y2-y1);
+		}
+		else{
+			let b = b + 1;
+			let adyminusbdx = adyminusbdx - (x2-x1);
+		}
+		}
+    return;
+	}
+
+    /** Draws a filled rectangle where the top left corner
+     *  is (x1, y1) and the bottom right corner is (x2, y2). */
+    function void drawRectangle(int x1, int y1, int x2, int y2) {
+		 var int counter;
+        let counter = y1;
+        while(counter < y2)
+        {
+            do Screen.drawLine(x1, counter, x2, counter);
+            let counter = counter + 1;
+        }
+        return;
+    }
+
+    /** Draws a filled circle of radius r around (cx, cy). */
+    function void drawCircle(int cx, int cy, int r) {
+	return;
+    }
+}
